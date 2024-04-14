@@ -1,0 +1,75 @@
+{% extends layout_path %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %}Transactions{% endblock title %}
+
+{% block vendor_css %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'vendor/libs/select2/select2.css' %}" />
+<link rel="stylesheet" href="{% static 'vendor/libs/@form-validation/umd/styles/index.min.css' %}" />
+<link rel="stylesheet" href="{% static 'vendor/libs/flatpickr/flatpickr.css' %}" />
+<link rel="stylesheet" href="{% static 'vendor/libs/sweetalert2/sweetalert2.css' %}" />
+{% endblock vendor_css %}
+
+{% block vendor_js %}
+{{ block.super }}
+<script src="{% static 'vendor/libs/select2/select2.js' %}"></script>
+<script src="{% static 'vendor/libs/@form-validation/umd/bundle/popular.min.js' %}"></script>
+<script src="{% static 'vendor/libs/@form-validation/umd/plugin-bootstrap5/index.min.js' %}"></script>
+<script src="{% static 'vendor/libs/@form-validation/umd/plugin-auto-focus/index.min.js' %}"></script>
+<script src="{% static 'vendor/libs/flatpickr/flatpickr.js' %}"></script>
+<script src="{% static 'vendor/libs/sweetalert2/sweetalert2.js' %}"></script>
+{% endblock vendor_js %}
+
+{% block page_js %}
+{{ block.super }}
+<script src="{% static 'js/transactions-add-update.js' %}"></script>
+<script src="{% static 'js/transactions-delete.js' %}"></script>
+{% endblock page_js %}
+
+{% block content %}
+
+<h4 class="py-3 mb-4">
+  <span class="text-muted fw-light">{% translate "Transactions" %} /</span> {% translate "Update" %} {% translate "Transaction" %} #{{ transaction_id.id }}
+</h4>
+
+<!-- Update Transactions Form -->
+<div class="card">
+  <div class="card-body">
+    <form class="update-transaction pt-0" id="UpdateTransactionForm" action="{% url 'transactions-update' transaction_id.id %}" method="post">
+      {% csrf_token %}
+      <input type="hidden" name="id" id="user_id">
+      <div class="mb-3">
+        <label class="form-label" for="customer-name">Customer</label>
+        <input type="text" class="form-control" id="customer-name" name="customer" value="{{ transaction_id.customer }}" placeholder="Full Name" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="transaction-date">Transaction date</label>
+        <input type="text" id="transaction-date" class="form-control" name="transaction_date" value="{{ transaction_id.transaction_date|date:'c' }}" placeholder="Transaction Date" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="current_date">Due date</label>
+        <input type="text" id="due-date" class="form-control" name="due_date" value="{{ transaction_id.due_date|date:'c' }}" placeholder="Due Date" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="total-amount">Total Amount</label>
+        <input type="number" id="total-amount" name="total" class="form-control" value="{{ transaction_id.total }}" placeholder="Total Amount" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="customer-status">Status</label>
+        <select id="customer-status" class="select2 form-select" name="status">
+          <option value="Paid" {% if transaction_id.status == 'Paid' %} selected {% endif %}>Paid</option>
+          <option value="Due" {% if transaction_id.status == 'Due' %} selected {% endif %}>Due</option>
+          <option value="Canceled" {% if transaction_id.status == 'Canceled' %} selected {% endif %}>Canceled</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary me-sm-3 me-1 data-submit">Save</button>
+      <a href="{% url 'transactions-delete' transaction_id.id %}" class="btn btn-danger me-sm-3 me-1 delete-transaction" data-transaction-username="{{ transaction_id.customer }}">Delete</a>
+      <a href="{% url 'transactions' %}" class="btn btn-secondary me-sm-3 me-1">Back</a>
+    </form>
+  </div>
+</div>
+<!--/ Update Transactions Form -->
+{% endblock %}

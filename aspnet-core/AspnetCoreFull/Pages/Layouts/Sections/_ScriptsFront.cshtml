@@ -1,0 +1,13 @@
+<environment include="Development">
+  <script src="~/vendor/libs/popper/popper.dist.js"></script>
+  <script src="~/vendor/js/bootstrap.dist.js"></script>
+  <!-- node-waves required for animation on button click -->
+  <script src="~/vendor/libs/node-waves/node-waves.dist.js"></script>
+  <script src="~/js/site.dist.js"></script>
+</environment>
+<environment exclude="Development">
+  <script src="~/vendor/libs/popper/popper.dist.js" asp-append-version="true"></script>
+  <script src="~/vendor/js/bootstrap.dist.js" asp-append-version="true"></script>
+  <script src="~/vendor/libs/node-waves/node-waves.dist.js"></script>
+  <script src="~/js/site.dist.js" asp-append-version="true"></script>
+</environment>

@@ -1,0 +1,12 @@
+{% extends layout_path %}
+
+{% load i18n %}
+
+{% block title %}Page 1 - Starter Kit{% endblock title %}
+
+{% block content %}
+
+<h4 class="py-3 mb-4">{% translate "Page 1" %}</h4>
+<p>Sample page.<br />For more layout options refer <a href="{% get_theme_variables 'documentation' %}" target="_blank" class="fw-medium">Layout docs</a>.</p>
+
+{% endblock %}

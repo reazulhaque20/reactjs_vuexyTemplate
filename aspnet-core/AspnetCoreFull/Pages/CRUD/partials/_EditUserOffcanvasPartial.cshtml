@@ -1,0 +1,53 @@
+
+@* Edit User Form Offcanvas *@
+<div class="offcanvas offcanvas-end" tabindex="-1" id="editUserOffcanvas" aria-labelledby="editUserOffcanvasLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="editUserOffcanvasLabel">Edit User</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body mx-0 flex-grow-0">
+    <form method="post" asp-page-handler="EditOrUpdate" asp-route-id="" id="editUserForm">
+
+      <div class="mb-3">
+        <label for="EditUser_UserName" class="form-label">User Name</label>
+        <input class="form-control" id="EditUser_UserName" name="user.UserName" value="" />
+      </div>
+
+      <div class="mb-3">
+        <label for="EditUser_Email" class="form-label">Email</label>
+        <input class="form-control" id="EditUser_Email" name="user.Email" value="" />
+      </div>
+
+      <div class="mb-3">
+        <label for="EditUser_ContactNumber" class="form-label">Contact</label>
+        <input class="form-control phone-mask" id="EditUser_ContactNumber" name="user.ContactNumber" />
+      </div>
+
+      <div class="mb-3">
+        <label for="EditUser_SelectedRole" class="form-label">Select Role</label>
+        <select class="form-select" id="EditUser_SelectedRole" name="user.SelectedRole"
+          asp-items="Model.AvailableRolesSelectList" value="">
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="EditUser_SelectedPlan" class="form-label">Select Plan</label>
+        <select class="form-select" id="EditUser_SelectedPlan" name="user.SelectedPlan"
+          asp-items="Model.AvailablePlansSelectList" value="">
+        </select>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" name="user.IsVerified" id="EditUser_IsVerified" />
+        <label class="form-check-label" for="EditUser_IsVerified">Is Verified</label>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary me-3">Submit</button>
+          <button type="reset" class="btn btn-label-secondary" data-bs-dismiss="offcanvas">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,796 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-07 12:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: apps/academy/templates/app_academy_course.html:32
+#: apps/academy/templates/app_academy_course_details.html:30
+msgid "Academy"
+msgstr "الأكاديمية"
+
+#: apps/academy/templates/app_academy_course.html:32
+msgid "My Course"
+msgstr "الدورة التدريبية الخاصة بي"
+
+#: apps/academy/templates/app_academy_course_details.html:30
+msgid "Course Details"
+msgstr "تفاصيل الدورة"
+
+#: apps/access/templates/app_access_permission.html:33
+msgid "Permissions"
+msgstr "الأذونات"
+
+#: apps/access/templates/app_access_permission.html:33
+#: apps/access/templates/app_access_roles.html:31
+#: apps/invoice/templates/app_invoice_list.html:28
+#: apps/transactions/templates/transactions_list.html:48
+msgid "List"
+msgstr "قائمة"
+
+#: apps/access/templates/app_access_roles.html:31
+msgid "Roles"
+msgstr "الأدوار"
+
+#: apps/cards/templates/cards_actions.html:27
+#: apps/cards/templates/cards_advance.html:32
+#: apps/cards/templates/cards_analytics.html:32
+#: apps/cards/templates/cards_basic.html:16
+#: apps/cards/templates/cards_statistics.html:27
+#: apps/ui/templates/ui_accordion.html:10 apps/ui/templates/ui_alerts.html:10
+#: apps/ui/templates/ui_badges.html:10 apps/ui/templates/ui_buttons.html:11
+#: apps/ui/templates/ui_carousel.html:30 apps/ui/templates/ui_collapse.html:10
+#: apps/ui/templates/ui_dropdowns.html:16 apps/ui/templates/ui_footer.html:10
+#: apps/ui/templates/ui_list_groups.html:10 apps/ui/templates/ui_modals.html:21
+#: apps/ui/templates/ui_navbar.html:21 apps/ui/templates/ui_offcanvas.html:10
+#: apps/ui/templates/ui_pagination_breadcrumbs.html:10
+#: apps/ui/templates/ui_progress.html:10 apps/ui/templates/ui_spinners.html:15
+#: apps/ui/templates/ui_tabs_pills.html:10 apps/ui/templates/ui_toasts.html:26
+#: apps/ui/templates/ui_tooltips_popovers.html:15
+msgid "UI elements"
+msgstr "عناصر واجهة المستخدم"
+
+#: apps/cards/templates/cards_actions.html:27
+#: apps/cards/templates/cards_advance.html:32
+#: apps/cards/templates/cards_analytics.html:32
+#: apps/cards/templates/cards_basic.html:16
+#: apps/cards/templates/cards_statistics.html:27
+msgid "Cards"
+msgstr "البطاقات"
+
+#: apps/cards/templates/cards_actions.html:27
+msgid "Actions"
+msgstr "الإجراءات"
+
+#: apps/cards/templates/cards_advance.html:32
+msgid "Advance"
+msgstr "متقدم"
+
+#: apps/cards/templates/cards_analytics.html:32
+msgid "Analytics"
+msgstr "التحليلات"
+
+#: apps/cards/templates/cards_basic.html:16
+#: apps/extended_ui/templates/extended_ui_timeline_basic.html:10
+#: apps/tables/templates/tables_basic.html:10
+#: apps/tables/templates/tables_datatables_basic.html:36
+msgid "Basic"
+msgstr "أساسي"
+
+#: apps/cards/templates/cards_statistics.html:27
+msgid "Statistics"
+msgstr "الإحصائيات"
+
+#: apps/charts/templates/charts_apex.html:25
+#: apps/charts/templates/charts_chartjs.html:20
+msgid "Charts"
+msgstr "الرسوم البيانية"
+
+#: apps/charts/templates/charts_apex.html:25
+msgid "Apex Charts"
+msgstr "مخططات القمة"
+
+#: apps/charts/templates/charts_chartjs.html:20
+msgid "ChartJS"
+msgstr "تشارت جي إس"
+
+#: apps/ecommerce/templates/app_ecommerce_category_list.html:45
+#: apps/ecommerce/templates/app_ecommerce_customer_all.html:37
+#: apps/ecommerce/templates/app_ecommerce_customer_details_billing.html:43
+#: apps/ecommerce/templates/app_ecommerce_customer_details_notifications.html:40
+#: apps/ecommerce/templates/app_ecommerce_customer_details_overview.html:41
+#: apps/ecommerce/templates/app_ecommerce_customer_details_security.html:41
+#: apps/ecommerce/templates/app_ecommerce_manage_reviews.html:41
+#: apps/ecommerce/templates/app_ecommerce_order_details.html:42
+#: apps/ecommerce/templates/app_ecommerce_order_list.html:28
+#: apps/ecommerce/templates/app_ecommerce_product_add.html:38
+#: apps/ecommerce/templates/app_ecommerce_product_list.html:30
+#: apps/ecommerce/templates/app_ecommerce_referral.html:31
+#: apps/ecommerce/templates/app_ecommerce_settings_checkout.html:17
+#: apps/ecommerce/templates/app_ecommerce_settings_detail.html:27
+#: apps/ecommerce/templates/app_ecommerce_settings_locations.html:28
+#: apps/ecommerce/templates/app_ecommerce_settings_notifications.html:16
+#: apps/ecommerce/templates/app_ecommerce_settings_payments.html:16
+#: apps/ecommerce/templates/app_ecommerce_settings_shipping.html:16
+msgid "eCommerce"
+msgstr "التجارة الإلكترونية"
+
+#: apps/ecommerce/templates/app_ecommerce_category_list.html:45
+msgid "Category List"
+msgstr "قائمة الفئات"
+
+#: apps/ecommerce/templates/app_ecommerce_customer_all.html:37
+msgid "All Customers"
+msgstr "جميع العملاء"
+
+#: apps/ecommerce/templates/app_ecommerce_customer_details_billing.html:43
+#: apps/ecommerce/templates/app_ecommerce_customer_details_notifications.html:40
+#: apps/ecommerce/templates/app_ecommerce_customer_details_overview.html:41
+#: apps/ecommerce/templates/app_ecommerce_customer_details_security.html:41
+msgid "Customer Details"
+msgstr "تفاصيل العميل"
+
+#: apps/ecommerce/templates/app_ecommerce_customer_details_billing.html:43
+msgid "Address & Billing"
+msgstr "العنوان"
+
+#: apps/ecommerce/templates/app_ecommerce_customer_details_notifications.html:40
+#: apps/pages/templates/pages_account_settings_notifications.html:20
+#: apps/users/templates/app_user_view_notifications.html:34
+msgid "Notifications"
+msgstr "الإخطارات"
+
+#: apps/ecommerce/templates/app_ecommerce_customer_details_overview.html:41
+msgid "Overview"
+msgstr "نظرة عامة"
+
+#: apps/ecommerce/templates/app_ecommerce_customer_details_security.html:41
+#: apps/pages/templates/pages_account_settings_security.html:37
+#: apps/users/templates/app_user_view_security.html:36
+msgid "Security"
+msgstr "الأمن"
+
+#: apps/ecommerce/templates/app_ecommerce_manage_reviews.html:41
+msgid "Manage Reviews"
+msgstr "إدارة المراجعات"
+
+#: apps/ecommerce/templates/app_ecommerce_order_details.html:42
+msgid "Order Details"
+msgstr "تفاصيل الطلب"
+
+#: apps/ecommerce/templates/app_ecommerce_order_list.html:28
+msgid "Order List"
+msgstr "قائمة الطلبات"
+
+#: apps/ecommerce/templates/app_ecommerce_product_add.html:38
+msgid "Add Product"
+msgstr "إضافة منتج"
+
+#: apps/ecommerce/templates/app_ecommerce_product_list.html:30
+msgid "Product List"
+msgstr "قائمة المنتجات"
+
+#: apps/ecommerce/templates/app_ecommerce_referral.html:31
+msgid "Referrals"
+msgstr "الإحالات"
+
+#: apps/ecommerce/templates/app_ecommerce_settings_checkout.html:17
+#: apps/ecommerce/templates/app_ecommerce_settings_detail.html:27
+#: apps/ecommerce/templates/app_ecommerce_settings_locations.html:28
+#: apps/ecommerce/templates/app_ecommerce_settings_notifications.html:16
+#: apps/ecommerce/templates/app_ecommerce_settings_payments.html:16
+#: apps/ecommerce/templates/app_ecommerce_settings_shipping.html:16
+msgid "Settings"
+msgstr "الإعدادات"
+
+#: apps/extended_ui/templates/extended_ui_avatar.html:11
+#: apps/extended_ui/templates/extended_ui_blockui.html:25
+#: apps/extended_ui/templates/extended_ui_drag_and_drop.html:20
+#: apps/extended_ui/templates/extended_ui_media_player.html:25
+#: apps/extended_ui/templates/extended_ui_misc.html:32
+#: apps/extended_ui/templates/extended_ui_perfect_scrollbar.html:25
+#: apps/extended_ui/templates/extended_ui_star_ratings.html:25
+#: apps/extended_ui/templates/extended_ui_sweetalert2.html:26
+#: apps/extended_ui/templates/extended_ui_text_divider.html:10
+#: apps/extended_ui/templates/extended_ui_timeline_basic.html:10
+#: apps/extended_ui/templates/extended_ui_timeline_fullscreen.html:25
+#: apps/extended_ui/templates/extended_ui_tour.html:25
+#: apps/extended_ui/templates/extended_ui_treeview.html:25
+msgid "Extended UI"
+msgstr "واجهة مستخدم موسعة"
+
+#: apps/extended_ui/templates/extended_ui_avatar.html:11
+msgid "Avatar"
+msgstr "الصورة الرمزية"
+
+#: apps/extended_ui/templates/extended_ui_blockui.html:25
+msgid "BlockUI"
+msgstr "قفل واجهة المستخدم"
+
+#: apps/extended_ui/templates/extended_ui_drag_and_drop.html:20
+msgid "Drag & Drop"
+msgstr "سحب وإسقاط"
+
+#: apps/extended_ui/templates/extended_ui_media_player.html:25
+msgid "Plyr"
+msgstr "بلير"
+
+#: apps/extended_ui/templates/extended_ui_misc.html:32
+msgid "Miscellaneous"
+msgstr "متنوع"
+
+#: apps/extended_ui/templates/extended_ui_perfect_scrollbar.html:25
+msgid "Perfect Scrollbar"
+msgstr "شريط التمرير المثالي"
+
+#: apps/extended_ui/templates/extended_ui_star_ratings.html:25
+msgid "Star Ratings"
+msgstr "تقييمات النجوم"
+
+#: apps/extended_ui/templates/extended_ui_sweetalert2.html:26
+msgid "SweetAlert2"
+msgstr "تنبيه حلو2"
+
+#: apps/extended_ui/templates/extended_ui_text_divider.html:10
+msgid "Text Divider"
+msgstr "فاصل النصوص"
+
+#: apps/extended_ui/templates/extended_ui_timeline_basic.html:10
+#: apps/extended_ui/templates/extended_ui_timeline_fullscreen.html:25
+msgid "Timeline"
+msgstr "الجدول الزمني"
+
+#: apps/extended_ui/templates/extended_ui_timeline_fullscreen.html:25
+msgid "Fullscreen"
+msgstr "ملء الشاشة"
+
+#: apps/extended_ui/templates/extended_ui_tour.html:25
+msgid "Shepherd tour"
+msgstr "جولة الراعي"
+
+#: apps/extended_ui/templates/extended_ui_treeview.html:25
+msgid "Treeview"
+msgstr "عرض الشجرة"
+
+#: apps/form_layouts/templates/form_layouts_horizontal.html:30
+#: apps/form_layouts/templates/form_layouts_sticky.html:29
+#: apps/form_layouts/templates/form_layouts_vertical.html:30
+#: apps/form_validation/templates/form_validation.html:38
+#: apps/forms/templates/forms_basic_inputs.html:16
+#: apps/forms/templates/forms_custom_options.html:10
+#: apps/forms/templates/forms_editors.html:28
+#: apps/forms/templates/forms_extras.html:29
+#: apps/forms/templates/forms_file_upload.html:25
+#: apps/forms/templates/forms_input_groups.html:15
+#: apps/forms/templates/forms_pickers.html:35
+#: apps/forms/templates/forms_selects.html:34
+#: apps/forms/templates/forms_sliders.html:25
+#: apps/forms/templates/forms_switches.html:10
+msgid "Forms"
+msgstr "نماذج"
+
+#: apps/form_layouts/templates/form_layouts_horizontal.html:30
+msgid "Horizontal"
+msgstr "أفقي"
+
+#: apps/form_layouts/templates/form_layouts_horizontal.html:30
+#: apps/form_layouts/templates/form_layouts_vertical.html:30
+msgid "Layouts"
+msgstr "التخطيطات"
+
+#: apps/form_layouts/templates/form_layouts_sticky.html:29
+msgid "Sticky Actions"
+msgstr "إجراءات لاصقة"
+
+#: apps/form_layouts/templates/form_layouts_vertical.html:30
+msgid "Vertical"
+msgstr "رَأسِيّ"
+
+#: apps/form_validation/templates/form_validation.html:38
+msgid "Validation"
+msgstr "تصديق"
+
+#: apps/form_wizard/templates/form_wizard_icons.html:30
+#: apps/form_wizard/templates/form_wizard_numbered.html:34
+msgid "Form Wizard"
+msgstr "معالج النموذج"
+
+#: apps/form_wizard/templates/form_wizard_icons.html:30
+#: apps/icons/templates/icons_font_awesome.html:15
+#: apps/icons/templates/icons_tabler.html:15
+msgid "Icons"
+msgstr "الرموز"
+
+#: apps/form_wizard/templates/form_wizard_numbered.html:34
+msgid "Numbered"
+msgstr "مرقمة"
+
+#: apps/forms/templates/forms_basic_inputs.html:16
+msgid "Basic Inputs"
+msgstr "إدخالات أساسية"
+
+#: apps/forms/templates/forms_custom_options.html:10
+msgid "Custom Options"
+msgstr "خيارات مخصصة"
+
+#: apps/forms/templates/forms_editors.html:28
+msgid "Editors"
+msgstr "المحررين"
+
+#: apps/forms/templates/forms_extras.html:29
+msgid "Extras"
+msgstr "إضافات"
+
+#: apps/forms/templates/forms_file_upload.html:25
+msgid "File Upload"
+msgstr "رفع الملفات"
+
+#: apps/forms/templates/forms_input_groups.html:15
+msgid "Input groups"
+msgstr "مجموعات الإدخال"
+
+#: apps/forms/templates/forms_pickers.html:35
+msgid "Pickers"
+msgstr "أدوات الاختيار"
+
+#: apps/forms/templates/forms_selects.html:34
+msgid "Select & Tags"
+msgstr "تحديد ووسوم"
+
+#: apps/forms/templates/forms_sliders.html:25
+msgid "Sliders"
+msgstr "شريط التمرير"
+
+#: apps/forms/templates/forms_switches.html:10
+msgid "Switches"
+msgstr "مفاتيح التبديل"
+
+#: apps/icons/templates/icons_font_awesome.html:15
+msgid "Font Awesome"
+msgstr "الخط رائع"
+
+#: apps/icons/templates/icons_tabler.html:15
+msgid "Tabler"
+msgstr "تابلر"
+
+#: apps/invoice/templates/app_invoice_list.html:28
+msgid "Invoice"
+msgstr "فاتورة"
+
+#: apps/logistics/templates/app_logistics_dashboard.html:33
+msgid "Logistics"
+msgstr "اللوجستيات"
+
+#: apps/logistics/templates/app_logistics_dashboard.html:33
+msgid "Dashboard"
+msgstr "لوحة القيادة"
+
+#: apps/maps/templates/maps_leaflet.html:25
+msgid "Maps"
+msgstr "خرائط"
+
+#: apps/maps/templates/maps_leaflet.html:25
+msgid "Leaflet"
+msgstr "منشور"
+
+#: apps/modal_examples/templates/modal_examples.html:39
+msgid "Modal Examples"
+msgstr "أمثلة على النماذج المودال"
+
+#: apps/pages/templates/pages_account_settings_account.html:34
+#: apps/pages/templates/pages_account_settings_billing.html:42
+#: apps/pages/templates/pages_account_settings_connections.html:10
+#: apps/pages/templates/pages_account_settings_notifications.html:20
+#: apps/pages/templates/pages_account_settings_security.html:37
+msgid "Account Settings"
+msgstr "إعدادت الحساب"
+
+#: apps/pages/templates/pages_account_settings_account.html:34
+#: apps/users/templates/app_user_view_account.html:46
+msgid "Account"
+msgstr "حساب"
+
+#: apps/pages/templates/pages_account_settings_billing.html:42
+#: apps/users/templates/app_user_view_billing.html:38
+msgid "Billing & Plans"
+msgstr "الفواتير والخطط"
+
+#: apps/pages/templates/pages_account_settings_connections.html:10
+#: apps/pages/templates/pages_profile_connections.html:15
+#: apps/users/templates/app_user_view_connections.html:34
+msgid "Connections"
+msgstr "روابط"
+
+#: apps/pages/templates/pages_profile_connections.html:15
+#: apps/pages/templates/pages_profile_projects.html:15
+#: apps/pages/templates/pages_profile_teams.html:15
+#: apps/pages/templates/pages_profile_user.html:32
+msgid "User Profile"
+msgstr "ملف تعريفي للمستخدم"
+
+#: apps/pages/templates/pages_profile_projects.html:15
+msgid "Projects"
+msgstr "المشاريع"
+
+#: apps/pages/templates/pages_profile_teams.html:15
+msgid "Teams"
+msgstr "فرق"
+
+#: apps/pages/templates/pages_profile_user.html:32
+msgid "Profile"
+msgstr "حساب تعريفي"
+
+#: apps/tables/templates/tables_basic.html:10
+msgid "Tables"
+msgstr "الجداول"
+
+#: apps/tables/templates/tables_datatables_advanced.html:29
+#: apps/tables/templates/tables_datatables_basic.html:36
+#: apps/tables/templates/tables_datatables_extensions.html:30
+msgid "Datatables"
+msgstr "جداول البيانات"
+
+#: apps/tables/templates/tables_datatables_advanced.html:29
+msgid "Advanced"
+msgstr "متقدم"
+
+#: apps/tables/templates/tables_datatables_extensions.html:30
+msgid "Extensions"
+msgstr "الامتدادات"
+
+#: apps/transactions/templates/transactions_add.html:31
+#: apps/transactions/templates/transactions_list.html:48
+#: apps/transactions/templates/transactions_update.html:35
+msgid "Transactions"
+msgstr "المعاملات"
+
+#: apps/transactions/templates/transactions_add.html:31
+msgid "New"
+msgstr "جديد"
+
+#: apps/transactions/templates/transactions_add.html:31
+#: apps/transactions/templates/transactions_update.html:35
+msgid "Transaction"
+msgstr "عملية"
+
+#: apps/transactions/templates/transactions_update.html:35
+msgid "Update"
+msgstr "تحديث"
+
+#: apps/ui/templates/ui_accordion.html:10
+msgid "Accordion"
+msgstr "الأكورديون"
+
+#: apps/ui/templates/ui_alerts.html:10
+msgid "Alerts"
+msgstr "التنبيهات"
+
+#: apps/ui/templates/ui_badges.html:10
+msgid "Badges"
+msgstr "الشارات"
+
+#: apps/ui/templates/ui_buttons.html:11
+msgid "Buttons"
+msgstr "الأزرار"
+
+#: apps/ui/templates/ui_carousel.html:30
+msgid "Carousel"
+msgstr "شريط التمرير"
+
+#: apps/ui/templates/ui_collapse.html:10
+msgid "Collapse"
+msgstr "طي"
+
+#: apps/ui/templates/ui_dropdowns.html:16
+msgid "Dropdowns"
+msgstr "القوائم المنسدلة"
+
+#: apps/ui/templates/ui_footer.html:10
+msgid "Footer"
+msgstr "التذييل"
+
+#: apps/ui/templates/ui_list_groups.html:10
+
+msgid "List Groups"
+msgstr "قائمة المجموعات"
+
+#: apps/ui/templates/ui_modals.html:21
+msgid "Modals"
+msgstr "النماذج المودال"
+
+#: apps/ui/templates/ui_navbar.html:21
+msgid "Navbar"
+msgstr "شريط التنقل"
+
+#: apps/ui/templates/ui_offcanvas.html:10
+msgid "Offcanvas"
+msgstr "قائمة تنظيم العرض"
+
+#: apps/ui/templates/ui_pagination_breadcrumbs.html:10
+msgid "Pagination & Breadcrumbs"
+msgstr "ترقيم الصفحات وفتات الخبز"
+
+#: apps/ui/templates/ui_progress.html:10
+msgid "Progress bars"
+msgstr "أشرطة التقدم"
+
+#: apps/ui/templates/ui_spinners.html:15
+msgid "Spinners"
+msgstr "الغزالون"
+
+#: apps/ui/templates/ui_tabs_pills.html:10
+msgid "Tabs & Pills"
+msgstr "علامات التبويب"
+
+#: apps/ui/templates/ui_toasts.html:26
+msgid "Toasts"
+msgstr "تنبيهات"
+
+#: apps/ui/templates/ui_tooltips_popovers.html:15
+msgid "Tooltips & Popovers"
+msgstr "تلميحات وبوب أوفر"
+
+#: apps/ui/templates/ui_typography.html:10
+msgid "Typography"
+msgstr "الأسلوب والخطوط"
+
+#: apps/users/templates/app_user_view_account.html:46
+#: apps/users/templates/app_user_view_billing.html:38
+#: apps/users/templates/app_user_view_connections.html:34
+#: apps/users/templates/app_user_view_notifications.html:34
+#: apps/users/templates/app_user_view_security.html:36
+msgid "User"
+msgstr "مستخدم"
+
+#: apps/users/templates/app_user_view_account.html:46
+#: apps/users/templates/app_user_view_billing.html:38
+#: apps/users/templates/app_user_view_connections.html:34
+#: apps/users/templates/app_user_view_notifications.html:34
+#: apps/users/templates/app_user_view_security.html:36
+msgid "View"
+msgstr "منظر"
+
+#: apps/wizard_examples/templates/wizard_ex_checkout.html:41
+#: apps/wizard_examples/templates/wizard_ex_create_deal.html:34
+#: apps/wizard_examples/templates/wizard_ex_property_listing.html:39
+msgid "Wizard Examples"
+msgstr "أمثلة على المعالج"
+
+#: apps/wizard_examples/templates/wizard_ex_checkout.html:41
+msgid "Checkout"
+msgstr "الخروج"
+
+#: apps/wizard_examples/templates/wizard_ex_create_deal.html:34
+msgid "Create Deal"
+msgstr "إنشاء صفقة"
+
+#: apps/wizard_examples/templates/wizard_ex_property_listing.html:39
+msgid "Property Listing"
+msgstr "قائمة العقارات"
+
+#: config/settings.py:163 templates/layout/partials/navbar/navbar.html:63
+msgid "English"
+msgstr "English"
+
+#: config/settings.py:164 templates/layout/partials/navbar/navbar.html:68
+msgid "French"
+msgstr "Français"
+
+#: config/settings.py:165 templates/layout/partials/navbar/navbar.html:73
+msgid "Arabic"
+msgstr "عربي"
+
+#: config/settings.py:166 templates/layout/partials/navbar/navbar.html:78
+msgid "German"
+msgstr "Deutsch"
+
+
+msgid "Dashboards"
+msgstr "لوحات المعلومات"
+
+msgid "Collapsed menu"
+msgstr "القائمة المطوية"
+
+msgid "Content navbar"
+msgstr "شريط التنقل للمحتوى"
+
+msgid "Content nav + Sidebar"
+msgstr "الشريط الجانبي للتنقل في المحتوى"
+
+msgid "Without menu"
+msgstr "بدون قائمة"
+
+msgid "Without navbar"
+msgstr "بدون شريط التنقل"
+
+msgid "Fluid"
+msgstr "السوائل"
+
+msgid "Container"
+msgstr "حاوية"
+
+msgid "Blank"
+msgstr "فارغ"
+
+msgid "Front Pages"
+msgstr "الصفحات الأولى"
+
+msgid "Landing"
+msgstr "الهبوط"
+
+msgid "Pricing"
+msgstr "التسعير"
+
+msgid "Payments"
+msgstr "المدفوعات"
+
+msgid "Help Center"
+msgstr "مركز المساعدة"
+
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+msgid "Chat"
+msgstr "دردشة"
+
+msgid "Calendar"
+msgstr "التقويم"
+
+msgid "Kanban"
+msgstr "كانبان"
+
+msgid "Products"
+msgstr "المنتجات"
+
+msgid "Order"
+msgstr "النظام"
+
+msgid "Customer"
+msgstr "العميل"
+
+msgid "Store details"
+msgstr "تفاصيل المتجر"
+
+msgid "Shipping & Delivery"
+msgstr "الشحن"
+
+msgid "Locations"
+msgstr "المواقع"
+
+msgid "Fleet"
+msgstr "سريع"
+
+msgid "Preview"
+msgstr "معاينة"
+
+msgid "Edit"
+msgstr "يحرر"
+
+msgid "Add"
+msgstr "يضيف"
+
+msgid "Roles & Permissions"
+msgstr "الأدوار والأذونات"
+
+msgid "Pages"
+msgstr "الصفحات"
+
+msgid "FAQ"
+msgstr "التعليمات"
+
+msgid "Misc"
+msgstr "متنوعات"
+
+msgid "Error"
+msgstr "خطأ"
+
+msgid "Under Maintenance"
+msgstr "تحت الصيانة"
+
+msgid "Form Elements"
+msgstr "عناصر النموذج"
+
+msgid "Form Layouts"
+msgstr "تخطيطات النموذج"
+
+msgid "Vertical Form"
+msgstr "نموذج عمودي"
+
+msgid "Horizontal Form"
+msgstr "نموذج أفقي"
+
+msgid "Form Validation"
+msgstr "التحقق من صحة النموذج"
+
+msgid "Support"
+msgstr "الدعم"
+
+msgid "Documentation"
+msgstr "التوثيق"
+
+msgid "Coming Soon"
+msgstr "قريباً"
+
+msgid "Not Authorized"
+msgstr "غير مخول"
+
+msgid "Authentications"
+msgstr "المصادقة"
+
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+msgid "Cover"
+msgstr "غطاء"
+
+msgid "Register"
+msgstr "يسجل"
+
+msgid "Multi-steps"
+msgstr "متعدد الخطوات"
+
+msgid "Verify Email"
+msgstr "التحقق من البريد الإلكتروني"
+
+msgid "Reset Password"
+msgstr "إعادة تعيين كلمة المرور"
+
+msgid "Forgot Password"
+msgstr "نسيت كلمة المرور"
+
+msgid "Two Steps"
+msgstr "خطوتين"
+
+msgid "User interface"
+msgstr "واجهة المستخدم"
+
+msgid "Progress"
+msgstr "شريط التقدم"
+
+msgid "Media Player"
+msgstr "مشغل الوسائط"
+
+msgid "Tour"
+msgstr "جولة"
+
+msgid "Apps & Pages"
+msgstr "التطبيقات والصفحات"
+
+msgid "Apps"
+msgstr "تطبيقات"
+
+msgid "Components"
+msgstr "عناصر"
+
+msgid "Forms & Tables"
+msgstr "النماذج والجداول"
+
+msgid "Charts & Maps"
+msgstr "الرسوم البيانية والخرائط"
+
+msgid "Users"
+msgstr "المستخدمين"
+
+msgid "Fontawesome"
+msgstr "فونتاويسوم"
+
+msgid "Leaflet Maps"
+msgstr "خرائط النشرة"
+
+msgid "Transactions (CRUD)"
+msgstr "المعاملات (CRUD)"

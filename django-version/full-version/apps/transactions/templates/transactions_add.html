@@ -1,0 +1,69 @@
+{% extends layout_path %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %}Transactions{% endblock title %}
+
+{% block vendor_css %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'vendor/libs/select2/select2.css' %}" />
+<link rel="stylesheet" href="{% static 'vendor/libs/@form-validation/umd/styles/index.min.css' %}" />
+<link rel="stylesheet" href="{% static 'vendor/libs/flatpickr/flatpickr.css' %}" />
+{% endblock vendor_css %}
+
+{% block vendor_js %}
+{{ block.super }}
+<script src="{% static 'vendor/libs/select2/select2.js' %}"></script>
+<script src="{% static 'vendor/libs/@form-validation/umd/bundle/popular.min.js' %}"></script>
+<script src="{% static 'vendor/libs/@form-validation/umd/plugin-bootstrap5/index.min.js' %}"></script>
+<script src="{% static 'vendor/libs/@form-validation/umd/plugin-auto-focus/index.min.js' %}"></script>
+<script src="{% static 'vendor/libs/flatpickr/flatpickr.js' %}"></script>
+{% endblock vendor_js %}
+
+{% block page_js %}
+{{ block.super }}
+<script src="{% static 'js/transactions-add-update.js' %}"></script>
+{% endblock page_js %}
+
+{% block content %}
+<h4 class="py-3 mb-4">
+  <span class="text-muted fw-light">{% translate "Transactions" %} /</span> {% translate "New" %} {% translate "Transaction" %}
+</h4>
+<!-- Add Transactions Form -->
+<div class="card">
+  <div class="card-body">
+    <form class="add-transactions pt-0" id="addTransactionForm" action="{% url 'transactions-add' %}" method="post">
+      {% csrf_token %}
+      <div class="mb-3">
+        <label class="form-label" for="customer-name">Customer</label>
+        <input type="text" class="form-control" id="customer-name" name="customer" placeholder="Full Name" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="transaction-date">Transaction date</label>
+        <input type="date" id="transaction-date" class="form-control" name="transaction_date" value="{{ current_date }}" placeholder="Transaction Date" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="due-date">Due date</label>
+        <input type="date" id="due-date" class="form-control" name="due_date" placeholder="Due Date" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="total-amount">Total Amount</label>
+        <input type="number" id="total-amount" name="total" class="form-control" placeholder="Total Amount" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="customer-status">Status</label>
+        <select id="customer-status" class="select2 form-select" name="status">
+          <option value="" disabled selected class="d-none"></option>
+          <option value="Paid">Paid</option>
+          <option value="Due">Due</option>
+          <option value="Canceled">Canceled</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary me-sm-3 me-1" name="submitButton">Submit</button>
+      <a href="{% url 'transactions' %}" class="btn btn-secondary">Back</a>
+    </form>
+  </div>
+</div>
+<!--/ Add Transactions Form -->
+{% endblock %}

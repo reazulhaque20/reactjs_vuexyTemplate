@@ -1,0 +1,66 @@
+{% extends layout_path %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %}File upload - Forms{% endblock %}
+
+{% block vendor_css %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'vendor/libs/dropzone/dropzone.css' %}" />
+{% endblock vendor_css %}
+
+{% block vendor_js %}
+{{ block.super }}
+<script src="{% static 'vendor/libs/dropzone/dropzone.js' %}"></script>
+{% endblock vendor_js %}
+
+{% block page_js %}
+{{ block.super }}
+<script src="{% static 'js/forms-file-upload.js' %}"></script>
+{% endblock page_js %}
+
+{% block content %}
+<h4 class="py-3 mb-4">
+  <span class="text-muted fw-light">{% translate "Forms" %} /</span> {% translate "File Upload" %}
+</h4>
+
+<div class="row">
+  <!-- Basic  -->
+  <div class="col-12">
+    <div class="card mb-4">
+      <h5 class="card-header">Basic</h5>
+      <div class="card-body">
+        <form action="/upload" class="dropzone needsclick" id="dropzone-basic">
+          <div class="dz-message needsclick">
+            Drop files here or click to upload
+            <span class="note needsclick">(This is just a demo dropzone. Selected files are <span class="fw-medium">not</span> actually uploaded.)</span>
+          </div>
+          <div class="fallback">
+            <input name="file" type="file" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- /Basic  -->
+  <!-- Multi  -->
+  <div class="col-12">
+    <div class="card">
+      <h5 class="card-header">Multiple</h5>
+      <div class="card-body">
+        <form action="/upload" class="dropzone needsclick" id="dropzone-multi">
+          <div class="dz-message needsclick">
+            Drop files here or click to upload
+            <span class="note needsclick">(This is just a demo dropzone. Selected files are <span class="fw-medium">not</span> actually uploaded.)</span>
+          </div>
+          <div class="fallback">
+            <input name="file" type="file" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Multi  -->
+</div>
+{% endblock %}

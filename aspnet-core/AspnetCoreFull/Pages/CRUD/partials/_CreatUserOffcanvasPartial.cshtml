@@ -1,0 +1,51 @@
+@model AspnetCoreFull.Pages.CRUD.UserCRUDModel;
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="createUserOffcanvas" aria-labelledby="createUserOffcanvasLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="createUserOffcanvasLabel">Create User</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body mx-0 flex-grow-0">
+    <form method="post" id="createUserForm">
+      <div class="mb-3">
+        <label for="NewUser_User" class="form-label">User Name</label>
+        <input asp-for="NewUser.UserName" class="form-control" id="NewUser_User" placeholder="John Doe"
+          aria-label="John Doe" />
+      </div>
+      <div class="mb-3">
+        <label for="NewUser_Email" class="form-label">Email</label>
+        <input asp-for="NewUser.Email" class="form-control" id="NewUser_Email" placeholder="john.doe@example.com"
+          aria-label="john.doe@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="NewUser_ContactNumber" class="form-label">Contact</label>
+        <input asp-for="NewUser.ContactNumber" class="form-control phone-mask" id="NewUser_ContactNumber"
+          placeholder="+1 (609) 988-44-11" aria-label="+1 (609) 988-44-11" />
+      </div>
+      <div class="mb-3">
+        <label for="NewUser_SelectedRole" class="form-label">Select Role</label>
+        <select asp-for="NewUser.SelectedRole" asp-items="Model.AvailableRolesSelectList" class="form-select"
+          id="NewUser_SelectedRole">
+          <option value="">Select Role</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="NewUser_SelectedPlan" class="form-label">Select Plan</label>
+        <select asp-for="NewUser.SelectedPlan" asp-items="Model.AvailablePlansSelectList" class="form-select"
+          id="NewUser_SelectedPlan">
+          <option value="">Select Plan</option>
+        </select>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" asp-for="NewUser.IsVerified" class="form-check-input" id="NewUser_IsVerified" />
+        <label class="form-check-label" for="NewUser_IsVerified">Is Verified</label>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary me-3">Submit</button>
+          <button type="reset" class="btn btn-label-secondary" data-bs-dismiss="offcanvas">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

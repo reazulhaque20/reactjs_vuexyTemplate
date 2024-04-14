@@ -1,0 +1,183 @@
+{% extends layout_path %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %}Transactions{% endblock title %}
+
+{% block vendor_css %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'vendor/libs/datatables-bs5/datatables.bootstrap5.css' %}" />
+<link rel="stylesheet" href="{% static 'vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css' %}" />
+<link rel="stylesheet" href="{% static 'vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css' %}" />
+<link rel="stylesheet" href="{% static 'vendor/libs/sweetalert2/sweetalert2.css' %}" />
+{% endblock vendor_css %}
+
+{% block vendor_js %}
+{{ block.super }}
+<script src="{% static 'vendor/libs/moment/moment.js' %}"></script>
+<script src="{% static 'vendor/libs/datatables-bs5/datatables-bootstrap5.js' %}"></script>
+<script src="{% static 'vendor/libs/sweetalert2/sweetalert2.js' %}"></script>
+{% endblock vendor_js %}
+
+{% block page_js %}
+{{ block.super }}
+<script src="{% static 'js/transactions-list.js' %}"></script>
+<script src="{% static 'js/transactions-delete.js' %}"></script>
+{% endblock page_js %}
+
+{% block content %}
+
+
+<!-- Transactions Toast -->
+{% if messages %}
+<div class="toast-container end-0 m-1 me-4">
+  {% for message in messages %}
+  <div class="toast {% if message.tags == 'success' %}bg-success{% elif message.tags == 'error' %}bg-danger{% else %}bg-warning{% endif %}" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="true" data-bs-delay="2000">
+    <div class="toast-body text-center text-white fw-medium">
+      {{ message }}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+<!--/ Transactions Toast -->
+
+<!-- Transactions Table -->
+<h4 class="py-3 mb-4">
+  <span class="text-muted fw-light">{% translate "Transactions" %} /</span> {% translate "Transactions" %} {% translate "List" %}
+</h4>
+<!-- permission required: view_transaction -->
+{% if request.user|has_permission:"transactions.view_transaction"%}
+<div class="row g-4 mb-4">
+  <div class="col-sm-6 col-xl-3">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-items-start justify-content-between">
+          <div class="content-left">
+            <div class="d-flex align-items-end">
+              <h3 class="mb-0 me-2">{{ transactions_count }}</h3>
+              <small class="text-primary"></small>
+            </div>
+            <small>Total Transactions</small>
+          </div>
+          <span class="badge bg-label-primary rounded p-2">
+            <i class="ti ti-arrows-transfer-down ti-sm"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-xl-3">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-items-start justify-content-between">
+          <div class="content-left">
+            <div class="d-flex align-items-end">
+              <h3 class="mb-0 me-2">$ {{ paid_count }}</h3>
+              <small class="text-primary"></small>
+            </div>
+            <small>Total Paid</small>
+          </div>
+          <span class="badge bg-label-success rounded p-2">
+            <i class="ti ti-check ti-sm"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-xl-3">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-items-start justify-content-between">
+          <div class="content-left">
+            <div class="d-flex align-items-end">
+              <h3 class="mb-0 me-2">$ {{ due_count }}</h3>
+              <small class="text-primary"></small>
+            </div>
+            <small>Total Due</small>
+          </div>
+          <span class="badge bg-label-warning rounded p-2">
+            <i class="ti ti-clock-down ti-sm"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-xl-3">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-items-start justify-content-between">
+          <div class="content-left">
+            <div class="d-flex align-items-end">
+              <h3 class="mb-0 me-2">$ {{ canceled_count }}</h3>
+              <small class="text-primary"></small>
+            </div>
+            <small>Total Canceled</small>
+          </div>
+          <span class="badge bg-label-danger rounded p-2">
+            <i class="ti ti-x ti-sm"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-datatable table-responsive">
+    <table class="datatables-transaction table">
+      <thead class="border-top">
+        <tr class="text-nowrap">
+          <th></th>
+          <th>Id</th>
+          <th>Customer</th>
+          <th>Transaction Date</th>
+          <th>Due Date</th>
+          <th>Total</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for transaction in transactions %}
+        <tr>
+          <td></td>
+          <td>{{ transaction.id }}</td>
+          <td class="text-nowrap fw-medium text-heading">{{ transaction.customer|capfirst }}</td>
+          <td class="text-nowrap">{{ transaction.transaction_date }}</td>
+          <td class="text-nowrap">{{ transaction.due_date }}</td>
+          <td class="text-nowrap">$ {{ transaction.total }}</td>
+          <td>
+            <div class="badge bg-{% if transaction.status == 'Paid' %}success{% elif transaction.status == 'Due' %}warning{% elif transaction.status == 'Canceled' %}danger{% endif %} rounded-pill">
+              {{transaction.status}}
+            </div>
+          </td>
+          <td>
+            <div class="d-flex align-items-center gap-3">
+              <!-- permission required: edit_transaction -->
+              {% if request.user|has_permission:"transactions.edit_transaction" %}
+              <a href="{% url 'transactions-update' transaction.id %}" class="text-body"><i class='ti ti-edit ti-sm'></i></a>
+              {% endif %}
+              <!-- permission required: delete_transaction -->
+              {% if request.user|has_permission:"transactions.delete_transaction" %}
+              <a href="{% url 'transactions-delete' transaction.id %}" class="text-body delete-transaction" data-transaction-username="{{ transaction.customer|capfirst }}"><i class="ti ti-trash ti-sm"></i></a>
+              {% endif %}
+            </div>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+<!--/ Transactions Table -->
+<script>
+var addTransactionBtn = '{% if request.user|has_permission:"transactions.add_transaction" %}' + true + '{% endif %}';
+
+</script>
+
+
+{% endblock %}

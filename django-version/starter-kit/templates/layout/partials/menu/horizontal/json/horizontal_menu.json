@@ -1,0 +1,16 @@
+{
+  "menu": [
+    {
+      "url": "index",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "name": "Page 1",
+      "slug": "index"
+    },
+    {
+      "url": "page-2",
+      "icon": "menu-icon tf-icons ti ti-app-window",
+      "name": "Page 2",
+      "slug": "page-2"
+    }
+  ]
+}

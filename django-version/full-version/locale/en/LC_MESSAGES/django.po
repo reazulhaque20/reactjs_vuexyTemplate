@@ -1,0 +1,795 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-07 12:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/academy/templates/app_academy_course.html:32
+#: apps/academy/templates/app_academy_course_details.html:30
+msgid "Academy"
+msgstr "Academy"
+
+#: apps/academy/templates/app_academy_course.html:32
+msgid "My Course"
+msgstr "My Course"
+
+#: apps/academy/templates/app_academy_course_details.html:30
+msgid "Course Details"
+msgstr "Course Details"
+
+#: apps/access/templates/app_access_permission.html:33
+msgid "Permissions"
+msgstr "Permissions"
+
+#: apps/access/templates/app_access_permission.html:33
+#: apps/access/templates/app_access_roles.html:31
+#: apps/invoice/templates/app_invoice_list.html:28
+#: apps/transactions/templates/transactions_list.html:48
+msgid "List"
+msgstr "List"
+
+#: apps/access/templates/app_access_roles.html:31
+msgid "Roles"
+msgstr "Roles"
+
+#: apps/cards/templates/cards_actions.html:27
+#: apps/cards/templates/cards_advance.html:32
+#: apps/cards/templates/cards_analytics.html:32
+#: apps/cards/templates/cards_basic.html:16
+#: apps/cards/templates/cards_statistics.html:27
+#: apps/ui/templates/ui_accordion.html:10 apps/ui/templates/ui_alerts.html:10
+#: apps/ui/templates/ui_badges.html:10 apps/ui/templates/ui_buttons.html:11
+#: apps/ui/templates/ui_carousel.html:30 apps/ui/templates/ui_collapse.html:10
+#: apps/ui/templates/ui_dropdowns.html:16 apps/ui/templates/ui_footer.html:10
+#: apps/ui/templates/ui_list_groups.html:10 apps/ui/templates/ui_modals.html:21
+#: apps/ui/templates/ui_navbar.html:21 apps/ui/templates/ui_offcanvas.html:10
+#: apps/ui/templates/ui_pagination_breadcrumbs.html:10
+#: apps/ui/templates/ui_progress.html:10 apps/ui/templates/ui_spinners.html:15
+#: apps/ui/templates/ui_tabs_pills.html:10 apps/ui/templates/ui_toasts.html:26
+#: apps/ui/templates/ui_tooltips_popovers.html:15
+msgid "UI elements"
+msgstr "UI elements"
+
+#: apps/cards/templates/cards_actions.html:27
+#: apps/cards/templates/cards_advance.html:32
+#: apps/cards/templates/cards_analytics.html:32
+#: apps/cards/templates/cards_basic.html:16
+#: apps/cards/templates/cards_statistics.html:27
+msgid "Cards"
+msgstr "Cards"
+
+#: apps/cards/templates/cards_actions.html:27
+msgid "Actions"
+msgstr "Actions"
+
+#: apps/cards/templates/cards_advance.html:32
+msgid "Advance"
+msgstr "Advance"
+
+#: apps/cards/templates/cards_analytics.html:32
+msgid "Analytics"
+msgstr "Analytics"
+
+#: apps/cards/templates/cards_basic.html:16
+#: apps/extended_ui/templates/extended_ui_timeline_basic.html:10
+#: apps/tables/templates/tables_basic.html:10
+#: apps/tables/templates/tables_datatables_basic.html:36
+msgid "Basic"
+msgstr "Basic"
+
+#: apps/cards/templates/cards_statistics.html:27
+msgid "Statistics"
+msgstr "Statistics"
+
+#: apps/charts/templates/charts_apex.html:25
+#: apps/charts/templates/charts_chartjs.html:20
+msgid "Charts"
+msgstr "Charts"
+
+#: apps/charts/templates/charts_apex.html:25
+msgid "Apex Charts"
+msgstr "Apex Charts"
+
+#: apps/charts/templates/charts_chartjs.html:20
+msgid "ChartJS"
+msgstr "ChartJS"
+
+#: apps/ecommerce/templates/app_ecommerce_category_list.html:45
+#: apps/ecommerce/templates/app_ecommerce_customer_all.html:37
+#: apps/ecommerce/templates/app_ecommerce_customer_details_billing.html:43
+#: apps/ecommerce/templates/app_ecommerce_customer_details_notifications.html:40
+#: apps/ecommerce/templates/app_ecommerce_customer_details_overview.html:41
+#: apps/ecommerce/templates/app_ecommerce_customer_details_security.html:41
+#: apps/ecommerce/templates/app_ecommerce_manage_reviews.html:41
+#: apps/ecommerce/templates/app_ecommerce_order_details.html:42
+#: apps/ecommerce/templates/app_ecommerce_order_list.html:28
+#: apps/ecommerce/templates/app_ecommerce_product_add.html:38
+#: apps/ecommerce/templates/app_ecommerce_product_list.html:30
+#: apps/ecommerce/templates/app_ecommerce_referral.html:31
+#: apps/ecommerce/templates/app_ecommerce_settings_checkout.html:17
+#: apps/ecommerce/templates/app_ecommerce_settings_detail.html:27
+#: apps/ecommerce/templates/app_ecommerce_settings_locations.html:28
+#: apps/ecommerce/templates/app_ecommerce_settings_notifications.html:16
+#: apps/ecommerce/templates/app_ecommerce_settings_payments.html:16
+#: apps/ecommerce/templates/app_ecommerce_settings_shipping.html:16
+msgid "eCommerce"
+msgstr "eCommerce"
+
+#: apps/ecommerce/templates/app_ecommerce_category_list.html:45
+msgid "Category List"
+msgstr "Category List"
+
+#: apps/ecommerce/templates/app_ecommerce_customer_all.html:37
+msgid "All Customers"
+msgstr "All Customers"
+
+#: apps/ecommerce/templates/app_ecommerce_customer_details_billing.html:43
+#: apps/ecommerce/templates/app_ecommerce_customer_details_notifications.html:40
+#: apps/ecommerce/templates/app_ecommerce_customer_details_overview.html:41
+#: apps/ecommerce/templates/app_ecommerce_customer_details_security.html:41
+msgid "Customer Details"
+msgstr "Customer Details"
+
+#: apps/ecommerce/templates/app_ecommerce_customer_details_billing.html:43
+msgid "Address & Billing"
+msgstr "Address & Billing"
+
+#: apps/ecommerce/templates/app_ecommerce_customer_details_notifications.html:40
+#: apps/pages/templates/pages_account_settings_notifications.html:20
+#: apps/users/templates/app_user_view_notifications.html:34
+msgid "Notifications"
+msgstr "Notifications"
+
+#: apps/ecommerce/templates/app_ecommerce_customer_details_overview.html:41
+msgid "Overview"
+msgstr "Overview"
+
+#: apps/ecommerce/templates/app_ecommerce_customer_details_security.html:41
+#: apps/pages/templates/pages_account_settings_security.html:37
+#: apps/users/templates/app_user_view_security.html:36
+msgid "Security"
+msgstr "Security"
+
+#: apps/ecommerce/templates/app_ecommerce_manage_reviews.html:41
+msgid "Manage Reviews"
+msgstr "Manage Reviews"
+
+#: apps/ecommerce/templates/app_ecommerce_order_details.html:42
+msgid "Order Details"
+msgstr "Order Details"
+
+#: apps/ecommerce/templates/app_ecommerce_order_list.html:28
+msgid "Order List"
+msgstr "Order List"
+
+#: apps/ecommerce/templates/app_ecommerce_product_add.html:38
+msgid "Add Product"
+msgstr "Add Product"
+
+#: apps/ecommerce/templates/app_ecommerce_product_list.html:30
+msgid "Product List"
+msgstr "Product List"
+
+#: apps/ecommerce/templates/app_ecommerce_referral.html:31
+msgid "Referrals"
+msgstr "Referrals"
+
+#: apps/ecommerce/templates/app_ecommerce_settings_checkout.html:17
+#: apps/ecommerce/templates/app_ecommerce_settings_detail.html:27
+#: apps/ecommerce/templates/app_ecommerce_settings_locations.html:28
+#: apps/ecommerce/templates/app_ecommerce_settings_notifications.html:16
+#: apps/ecommerce/templates/app_ecommerce_settings_payments.html:16
+#: apps/ecommerce/templates/app_ecommerce_settings_shipping.html:16
+msgid "Settings"
+msgstr "Settings"
+
+#: apps/extended_ui/templates/extended_ui_avatar.html:11
+#: apps/extended_ui/templates/extended_ui_blockui.html:25
+#: apps/extended_ui/templates/extended_ui_drag_and_drop.html:20
+#: apps/extended_ui/templates/extended_ui_media_player.html:25
+#: apps/extended_ui/templates/extended_ui_misc.html:32
+#: apps/extended_ui/templates/extended_ui_perfect_scrollbar.html:25
+#: apps/extended_ui/templates/extended_ui_star_ratings.html:25
+#: apps/extended_ui/templates/extended_ui_sweetalert2.html:26
+#: apps/extended_ui/templates/extended_ui_text_divider.html:10
+#: apps/extended_ui/templates/extended_ui_timeline_basic.html:10
+#: apps/extended_ui/templates/extended_ui_timeline_fullscreen.html:25
+#: apps/extended_ui/templates/extended_ui_tour.html:25
+#: apps/extended_ui/templates/extended_ui_treeview.html:25
+msgid "Extended UI"
+msgstr "Extended UI"
+
+#: apps/extended_ui/templates/extended_ui_avatar.html:11
+msgid "Avatar"
+msgstr "Avatar"
+
+#: apps/extended_ui/templates/extended_ui_blockui.html:25
+msgid "BlockUI"
+msgstr "BlockUI"
+
+#: apps/extended_ui/templates/extended_ui_drag_and_drop.html:20
+msgid "Drag & Drop"
+msgstr "Drag & Drop"
+
+#: apps/extended_ui/templates/extended_ui_media_player.html:25
+msgid "Plyr"
+msgstr "Plyr"
+
+#: apps/extended_ui/templates/extended_ui_misc.html:32
+msgid "Miscellaneous"
+msgstr "Miscellaneous"
+
+#: apps/extended_ui/templates/extended_ui_perfect_scrollbar.html:25
+msgid "Perfect Scrollbar"
+msgstr "Perfect Scrollbar"
+
+#: apps/extended_ui/templates/extended_ui_star_ratings.html:25
+msgid "Star Ratings"
+msgstr "Star Ratings"
+
+#: apps/extended_ui/templates/extended_ui_sweetalert2.html:26
+msgid "SweetAlert2"
+msgstr "SweetAlert2"
+
+#: apps/extended_ui/templates/extended_ui_text_divider.html:10
+msgid "Text Divider"
+msgstr "Text Divider"
+
+#: apps/extended_ui/templates/extended_ui_timeline_basic.html:10
+#: apps/extended_ui/templates/extended_ui_timeline_fullscreen.html:25
+msgid "Timeline"
+msgstr "Timeline"
+
+#: apps/extended_ui/templates/extended_ui_timeline_fullscreen.html:25
+msgid "Fullscreen"
+msgstr "Fullscreen"
+
+#: apps/extended_ui/templates/extended_ui_tour.html:25
+msgid "Shepherd tour"
+msgstr "Shepherd tour"
+
+#: apps/extended_ui/templates/extended_ui_treeview.html:25
+msgid "Treeview"
+msgstr "Treeview"
+
+#: apps/form_layouts/templates/form_layouts_horizontal.html:30
+#: apps/form_layouts/templates/form_layouts_sticky.html:29
+#: apps/form_layouts/templates/form_layouts_vertical.html:30
+#: apps/form_validation/templates/form_validation.html:38
+#: apps/forms/templates/forms_basic_inputs.html:16
+#: apps/forms/templates/forms_custom_options.html:10
+#: apps/forms/templates/forms_editors.html:28
+#: apps/forms/templates/forms_extras.html:29
+#: apps/forms/templates/forms_file_upload.html:25
+#: apps/forms/templates/forms_input_groups.html:15
+#: apps/forms/templates/forms_pickers.html:35
+#: apps/forms/templates/forms_selects.html:34
+#: apps/forms/templates/forms_sliders.html:25
+#: apps/forms/templates/forms_switches.html:10
+msgid "Forms"
+msgstr "Forms"
+
+#: apps/form_layouts/templates/form_layouts_horizontal.html:30
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: apps/form_layouts/templates/form_layouts_horizontal.html:30
+#: apps/form_layouts/templates/form_layouts_vertical.html:30
+msgid "Layouts"
+msgstr "Layouts"
+
+#: apps/form_layouts/templates/form_layouts_sticky.html:29
+msgid "Sticky Actions"
+msgstr "Sticky Actions"
+
+#: apps/form_layouts/templates/form_layouts_vertical.html:30
+msgid "Vertical"
+msgstr "Vertical"
+
+#: apps/form_validation/templates/form_validation.html:38
+msgid "Validation"
+msgstr "Validation"
+
+#: apps/form_wizard/templates/form_wizard_icons.html:30
+#: apps/form_wizard/templates/form_wizard_numbered.html:34
+msgid "Form Wizard"
+msgstr "Form Wizard"
+
+#: apps/form_wizard/templates/form_wizard_icons.html:30
+#: apps/icons/templates/icons_font_awesome.html:15
+#: apps/icons/templates/icons_tabler.html:15
+msgid "Icons"
+msgstr "Icons"
+
+#: apps/form_wizard/templates/form_wizard_numbered.html:34
+msgid "Numbered"
+msgstr "Numbered"
+
+#: apps/forms/templates/forms_basic_inputs.html:16
+msgid "Basic Inputs"
+msgstr "Basic Inputs"
+
+#: apps/forms/templates/forms_custom_options.html:10
+msgid "Custom Options"
+msgstr "Custom Options"
+
+#: apps/forms/templates/forms_editors.html:28
+msgid "Editors"
+msgstr "Editors"
+
+#: apps/forms/templates/forms_extras.html:29
+msgid "Extras"
+msgstr "Extras"
+
+#: apps/forms/templates/forms_file_upload.html:25
+msgid "File Upload"
+msgstr "File Upload"
+
+#: apps/forms/templates/forms_input_groups.html:15
+msgid "Input groups"
+msgstr "Input groups"
+
+#: apps/forms/templates/forms_pickers.html:35
+msgid "Pickers"
+msgstr "Pickers"
+
+#: apps/forms/templates/forms_selects.html:34
+msgid "Select & Tags"
+msgstr "Select & Tags"
+
+#: apps/forms/templates/forms_sliders.html:25
+msgid "Sliders"
+msgstr "Sliders"
+
+#: apps/forms/templates/forms_switches.html:10
+msgid "Switches"
+msgstr "Switches"
+
+#: apps/icons/templates/icons_font_awesome.html:15
+msgid "Font Awesome"
+msgstr "Font Awesome"
+
+#: apps/icons/templates/icons_tabler.html:15
+msgid "Tabler"
+msgstr "Tabler"
+
+#: apps/invoice/templates/app_invoice_list.html:28
+msgid "Invoice"
+msgstr "Invoice"
+
+#: apps/logistics/templates/app_logistics_dashboard.html:33
+msgid "Logistics"
+msgstr "Logistics"
+
+#: apps/logistics/templates/app_logistics_dashboard.html:33
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: apps/maps/templates/maps_leaflet.html:25
+msgid "Maps"
+msgstr "Maps"
+
+#: apps/maps/templates/maps_leaflet.html:25
+msgid "Leaflet"
+msgstr "Leaflet"
+
+#: apps/modal_examples/templates/modal_examples.html:39
+msgid "Modal Examples"
+msgstr "Modal Examples"
+
+#: apps/pages/templates/pages_account_settings_account.html:34
+#: apps/pages/templates/pages_account_settings_billing.html:42
+#: apps/pages/templates/pages_account_settings_connections.html:10
+#: apps/pages/templates/pages_account_settings_notifications.html:20
+#: apps/pages/templates/pages_account_settings_security.html:37
+msgid "Account Settings"
+msgstr "Account Settings"
+
+#: apps/pages/templates/pages_account_settings_account.html:34
+#: apps/users/templates/app_user_view_account.html:46
+msgid "Account"
+msgstr "Account"
+
+#: apps/pages/templates/pages_account_settings_billing.html:42
+#: apps/users/templates/app_user_view_billing.html:38
+msgid "Billing & Plans"
+msgstr "Billing & Plans"
+
+#: apps/pages/templates/pages_account_settings_connections.html:10
+#: apps/pages/templates/pages_profile_connections.html:15
+#: apps/users/templates/app_user_view_connections.html:34
+msgid "Connections"
+msgstr "Connections"
+
+#: apps/pages/templates/pages_profile_connections.html:15
+#: apps/pages/templates/pages_profile_projects.html:15
+#: apps/pages/templates/pages_profile_teams.html:15
+#: apps/pages/templates/pages_profile_user.html:32
+msgid "User Profile"
+msgstr "User Profile"
+
+#: apps/pages/templates/pages_profile_projects.html:15
+msgid "Projects"
+msgstr "Projects"
+
+#: apps/pages/templates/pages_profile_teams.html:15
+msgid "Teams"
+msgstr "Teams"
+
+#: apps/pages/templates/pages_profile_user.html:32
+msgid "Profile"
+msgstr "Profile"
+
+#: apps/tables/templates/tables_basic.html:10
+msgid "Tables"
+msgstr "Tables"
+
+#: apps/tables/templates/tables_datatables_advanced.html:29
+#: apps/tables/templates/tables_datatables_basic.html:36
+#: apps/tables/templates/tables_datatables_extensions.html:30
+msgid "Datatables"
+msgstr "Datatables"
+
+#: apps/tables/templates/tables_datatables_advanced.html:29
+msgid "Advanced"
+msgstr "Advanced"
+
+#: apps/tables/templates/tables_datatables_extensions.html:30
+msgid "Extensions"
+msgstr "Extensions"
+
+#: apps/transactions/templates/transactions_add.html:31
+#: apps/transactions/templates/transactions_list.html:48
+#: apps/transactions/templates/transactions_update.html:35
+msgid "Transactions"
+msgstr "Transactions"
+
+#: apps/transactions/templates/transactions_add.html:31
+msgid "New"
+msgstr "New"
+
+#: apps/transactions/templates/transactions_add.html:31
+#: apps/transactions/templates/transactions_update.html:35
+
+msgid "Transaction"
+msgstr "Transaction"
+
+#: apps/transactions/templates/transactions_update.html:35
+msgid "Update"
+msgstr "Update"
+
+#: apps/ui/templates/ui_accordion.html:10
+msgid "Accordion"
+msgstr "Accordion"
+
+#: apps/ui/templates/ui_alerts.html:10
+msgid "Alerts"
+msgstr "Alerts"
+
+#: apps/ui/templates/ui_badges.html:10
+msgid "Badges"
+msgstr "Badges"
+
+#: apps/ui/templates/ui_buttons.html:11
+msgid "Buttons"
+msgstr "Buttons"
+
+#: apps/ui/templates/ui_carousel.html:30
+msgid "Carousel"
+msgstr "Carousel"
+
+#: apps/ui/templates/ui_collapse.html:10
+msgid "Collapse"
+msgstr "Collapse"
+
+#: apps/ui/templates/ui_dropdowns.html:16
+msgid "Dropdowns"
+msgstr "Dropdowns"
+
+#: apps/ui/templates/ui_footer.html:10
+msgid "Footer"
+msgstr "Footer"
+
+#: apps/ui/templates/ui_list_groups.html:10
+msgid "List Groups"
+msgstr "List Groups"
+
+#: apps/ui/templates/ui_modals.html:21
+msgid "Modals"
+msgstr "Modals"
+
+#: apps/ui/templates/ui_navbar.html:21
+msgid "Navbar"
+msgstr "Navbar"
+
+#: apps/ui/templates/ui_offcanvas.html:10
+msgid "Offcanvas"
+msgstr "Offcanvas"
+
+#: apps/ui/templates/ui_pagination_breadcrumbs.html:10
+msgid "Pagination & Breadcrumbs"
+msgstr "Pagination & Breadcrumbs"
+
+#: apps/ui/templates/ui_progress.html:10
+msgid "Progress bars"
+msgstr "Progress bars"
+
+#: apps/ui/templates/ui_spinners.html:15
+msgid "Spinners"
+msgstr "Spinners"
+
+#: apps/ui/templates/ui_tabs_pills.html:10
+msgid "Tabs & Pills"
+msgstr "Tabs & Pills"
+
+#: apps/ui/templates/ui_toasts.html:26
+msgid "Toasts"
+msgstr "Toasts"
+
+#: apps/ui/templates/ui_tooltips_popovers.html:15
+msgid "Tooltips & Popovers"
+msgstr "Tooltips & Popovers"
+
+#: apps/ui/templates/ui_typography.html:10
+msgid "Typography"
+msgstr "Typography"
+
+#: apps/users/templates/app_user_view_account.html:46
+#: apps/users/templates/app_user_view_billing.html:38
+#: apps/users/templates/app_user_view_connections.html:34
+#: apps/users/templates/app_user_view_notifications.html:34
+#: apps/users/templates/app_user_view_security.html:36
+msgid "User"
+msgstr "User"
+
+#: apps/users/templates/app_user_view_account.html:46
+#: apps/users/templates/app_user_view_billing.html:38
+#: apps/users/templates/app_user_view_connections.html:34
+#: apps/users/templates/app_user_view_notifications.html:34
+#: apps/users/templates/app_user_view_security.html:36
+msgid "View"
+msgstr "View"
+
+#: apps/wizard_examples/templates/wizard_ex_checkout.html:41
+#: apps/wizard_examples/templates/wizard_ex_create_deal.html:34
+#: apps/wizard_examples/templates/wizard_ex_property_listing.html:39
+msgid "Wizard Examples"
+msgstr "Wizard Examples"
+
+#: apps/wizard_examples/templates/wizard_ex_checkout.html:41
+msgid "Checkout"
+msgstr "Checkout"
+
+#: apps/wizard_examples/templates/wizard_ex_create_deal.html:34
+msgid "Create Deal"
+msgstr "Create Deal"
+
+#: apps/wizard_examples/templates/wizard_ex_property_listing.html:39
+msgid "Property Listing"
+msgstr "Property Listing"
+
+#: config/settings.py:163 templates/layout/partials/navbar/navbar.html:63
+msgid "English"
+msgstr "English"
+
+#: config/settings.py:164 templates/layout/partials/navbar/navbar.html:68
+msgid "French"
+msgstr "Français"
+
+#: config/settings.py:165 templates/layout/partials/navbar/navbar.html:73
+msgid "Arabic"
+msgstr "عربي"
+
+#: config/settings.py:166 templates/layout/partials/navbar/navbar.html:78
+msgid "German"
+msgstr "Deutsch"
+
+
+msgid "Dashboards"
+msgstr "Dashboards"
+
+msgid "Collapsed menu"
+msgstr "Collapsed menu"
+
+msgid "Content navbar"
+msgstr "Content navbar"
+
+msgid "Content nav + Sidebar"
+msgstr "Content nav + Sidebar"
+
+msgid "Without menu"
+msgstr "Without menu"
+
+msgid "Without navbar"
+msgstr "Without navbar"
+
+msgid "Fluid"
+msgstr "Fluid"
+
+msgid "Container"
+msgstr "Container"
+
+msgid "Blank"
+msgstr "Blank"
+
+msgid "Front Pages"
+msgstr "Front Pages"
+
+msgid "Landing"
+msgstr "Landing"
+
+msgid "Pricing"
+msgstr "Pricing"
+
+msgid "Payments"
+msgstr "Payments"
+
+msgid "Help Center"
+msgstr "Help Center"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Chat"
+msgstr "Chat"
+
+msgid "Calendar"
+msgstr "Calendar"
+
+msgid "Kanban"
+msgstr "Kanban"
+
+msgid "Products"
+msgstr "Products"
+
+msgid "Order"
+msgstr "Order"
+
+msgid "Customer"
+msgstr "Customer"
+
+msgid "Store details"
+msgstr "Store details"
+
+msgid "Shipping & Delivery"
+msgstr "Shipping & Delivery"
+
+msgid "Locations"
+msgstr "Locations"
+
+msgid "Fleet"
+msgstr "Fleet"
+
+msgid "Preview"
+msgstr "Preview"
+
+msgid "Edit"
+msgstr "Edit"
+
+msgid "Add"
+msgstr "Add"
+
+msgid "Roles & Permissions"
+msgstr "Roles & Permissions"
+
+msgid "Pages"
+msgstr "Pages"
+
+msgid "FAQ"
+msgstr "FAQ"
+
+msgid "Misc"
+msgstr "Misc"
+
+msgid "Error"
+msgstr "Error"
+
+msgid "Under Maintenance"
+msgstr "Under Maintenance"
+
+msgid "Coming Soon"
+msgstr "Coming Soon"
+
+msgid "Not Authorized"
+msgstr "Not Authorized"
+
+msgid "Authentications"
+msgstr "Authentications"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Cover"
+msgstr "Cover"
+
+msgid "Register"
+msgstr "Register"
+
+msgid "Multi-steps"
+msgstr "Multi-steps"
+
+msgid "Verify Email"
+msgstr "Verify Email"
+
+msgid "Reset Password"
+msgstr "Reset Password"
+
+msgid "Forgot Password"
+msgstr "Forgot Password"
+
+msgid "Two Steps"
+msgstr "Two Steps"
+
+msgid "User interface"
+msgstr "User interface"
+
+msgid "Progress"
+msgstr "Progress"
+
+msgid "Media Player"
+msgstr "Media Player"
+
+msgid "Tour"
+msgstr "Tour"
+
+msgid "Form Elements"
+msgstr "Form Elements"
+
+msgid "Form Layouts"
+msgstr "Form Layouts"
+
+msgid "Vertical Form"
+msgstr "Vertical Form"
+
+msgid "Horizontal Form"
+msgstr "Horizontal Form"
+
+msgid "Form Validation"
+msgstr "Form Validation"
+
+msgid "Support"
+msgstr "Support"
+
+msgid "Documentation"
+msgstr "Documentation"
+
+msgid "Apps & Pages"
+msgstr "Apps & Pages"
+
+msgid "Apps"
+msgstr "Apps"
+
+msgid "Components"
+msgstr "Components"
+
+msgid "Forms & Tables"
+msgstr "Forms & Tables"
+
+msgid "Charts & Maps"
+msgstr "Charts & Maps"
+
+msgid "Users"
+msgstr "Users"
+
+msgid "Fontawesome"
+msgstr "Fontawesome"
+
+msgid "Leaflet Maps"
+msgstr "Leaflet Maps"
+
+msgid "Transactions (CRUD)"
+msgstr "Transactions (CRUD)"

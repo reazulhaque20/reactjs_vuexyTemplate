@@ -1,0 +1,41 @@
+{% extends layout_path %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %}Shepherd tour - Extended UI{% endblock title %}
+
+{% block vendor_css %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'vendor/libs/shepherd/shepherd.css' %}" />
+{% endblock vendor_css %}
+
+{% block vendor_js %}
+{{ block.super }}
+<script src="{% static 'vendor/libs/shepherd/shepherd.js' %}"></script>
+{% endblock vendor_js %}
+
+{% block page_js %}
+{{ block.super }}
+<script src="{% static 'js/extended-ui-tour.js' %}"></script>
+{% endblock page_js %}
+
+{% block content %}
+<h4 class="py-3 mb-4">
+  <span class="text-muted fw-light">{% translate "Extended UI" %} /</span> {% translate "Shepherd tour" %}
+</h4>
+
+<div class="row">
+  <div class="col-12">
+    <div class="card tour-card">
+      <h5 class="card-header">Tour</h5>
+      <div class="card-body">
+        <button class="btn btn-primary" id="shepherd-example">
+          Start tour
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

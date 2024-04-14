@@ -1,0 +1,79 @@
+[
+  {
+    "model": "transactions.transaction",
+    "pk": 1,
+    "fields": {
+      "customer": "John Doe",
+      "transaction_date": "2022-01-01",
+      "due_date": "2022-01-31",
+      "total": "100.00",
+      "status": "Paid"
+    }
+  },
+  {
+    "model": "transactions.transaction",
+    "pk": 2,
+    "fields": {
+      "customer": "Jane Smith",
+      "transaction_date": "2022-02-01",
+      "due_date": "2022-02-28",
+      "total": "200.00",
+      "status": "Due"
+    }
+  },
+  {
+    "model": "transactions.transaction",
+    "pk": 3,
+    "fields": {
+      "customer": "Bob Johnson",
+      "transaction_date": "2022-03-01",
+      "due_date": "2022-03-31",
+      "total": "300.00",
+      "status": "Canceled"
+    }
+  },
+  {
+    "model": "transactions.transaction",
+    "pk": 4,
+    "fields": {
+      "customer": "Alice Lee",
+      "transaction_date": "2022-04-01",
+      "due_date": "2022-04-30",
+      "total": "400.00",
+      "status": "Paid"
+    }
+  },
+  {
+    "model": "transactions.transaction",
+    "pk": 5,
+    "fields": {
+      "customer": "David Kim",
+      "transaction_date": "2022-05-01",
+      "due_date": "2022-05-31",
+      "total": "500.00",
+      "status": "Due"
+    }
+  },
+  {
+    "model": "transactions.transaction",
+    "pk": 6,
+    "fields": {
+      "customer": "Emily Chen",
+      "transaction_date": "2022-06-01",
+      "due_date": "2022-06-30",
+      "total": "600.00",
+      "status": "Canceled"
+    }
+  },
+  {
+    "model": "transactions.transaction",
+    "pk": 7,
+    "fields": {
+      "customer": "Michael Brown",
+      "transaction_date": "2022-07-01",
+      "due_date": "2022-07-31",
+      "total": "700.00",
+      "status": "Paid"
+    }
+  }
+]

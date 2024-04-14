@@ -1,0 +1,2832 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://demos.pixinvent.com/vuexy/changelog.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Changelog</title>
+<style>
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  color: #24292f;
+  background-color: #ffffff;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body h1:hover .anchor .octicon-link:before,
+.markdown-body h2:hover .anchor .octicon-link:before,
+.markdown-body h3:hover .anchor .octicon-link:before,
+.markdown-body h4:hover .anchor .octicon-link:before,
+.markdown-body h5:hover .anchor .octicon-link:before,
+.markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-color: currentColor;
+  -webkit-mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+  mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+}
+
+.markdown-body details,
+.markdown-body figcaption,
+.markdown-body figure {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body [hidden] {
+  display: none !important;
+}
+
+.markdown-body a {
+  background-color: transparent;
+  color: #0969da;
+  text-decoration: none;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body abbr[title] {
+  border-bottom: none;
+  text-decoration: underline dotted;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body dfn {
+  font-style: italic;
+}
+
+.markdown-body h1 {
+  margin: .67em 0;
+  font-weight: 600;
+  padding-bottom: .3em;
+  font-size: 2em;
+  border-bottom: 1px solid hsla(210,18%,87%,1);
+}
+
+.markdown-body mark {
+  background-color: #fff8c5;
+  color: #24292f;
+}
+
+.markdown-body small {
+  font-size: 90%;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body sup {
+  top: -0.5em;
+}
+
+.markdown-body img {
+  border-style: none;
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #ffffff;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body figure {
+  margin: 1em 40px;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  overflow: hidden;
+  background: transparent;
+  border-bottom: 1px solid hsla(210,18%,87%,1);
+  height: .25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #d0d7de;
+  border: 0;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body [type=button],
+.markdown-body [type=reset],
+.markdown-body [type=submit] {
+  -webkit-appearance: button;
+}
+
+.markdown-body [type=button]::-moz-focus-inner,
+.markdown-body [type=reset]::-moz-focus-inner,
+.markdown-body [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.markdown-body [type=button]:-moz-focusring,
+.markdown-body [type=reset]:-moz-focusring,
+.markdown-body [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.markdown-body [type=checkbox],
+.markdown-body [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body [type=number]::-webkit-inner-spin-button,
+.markdown-body [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.markdown-body [type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+.markdown-body [type=search]::-webkit-search-cancel-button,
+.markdown-body [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.markdown-body ::-webkit-input-placeholder {
+  color: inherit;
+  opacity: .54;
+}
+
+.markdown-body ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body hr::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body details:not([open])>*:not(summary) {
+  display: none !important;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  line-height: 10px;
+  color: #24292f;
+  vertical-align: middle;
+  background-color: #f6f8fa;
+  border: solid 1px rgba(175,184,193,0.2);
+  border-bottom-color: rgba(175,184,193,0.2);
+  border-radius: 6px;
+  box-shadow: inset 0 -1px 0 rgba(175,184,193,0.2);
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h2 {
+  font-weight: 600;
+  padding-bottom: .3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid hsla(210,18%,87%,1);
+}
+
+.markdown-body h3 {
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-weight: 600;
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  font-weight: 600;
+  font-size: .85em;
+  color: #57606a;
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+  padding: 0 1em;
+  color: #57606a;
+  border-left: .25em solid #d0d7de;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body tt,
+.markdown-body code {
+  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  font-size: 12px;
+  word-wrap: normal;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-body ::placeholder {
+  color: #6e7781;
+  opacity: 1;
+}
+
+.markdown-body input::-webkit-outer-spin-button,
+.markdown-body input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.markdown-body .pl-c {
+  color: #6e7781;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0550ae;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #8250df;
+}
+
+.markdown-body .pl-smi,
+.markdown-body .pl-s .pl-s1 {
+  color: #24292f;
+}
+
+.markdown-body .pl-ent {
+  color: #116329;
+}
+
+.markdown-body .pl-k {
+  color: #cf222e;
+}
+
+.markdown-body .pl-s,
+.markdown-body .pl-pds,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sre,
+.markdown-body .pl-sr .pl-sra {
+  color: #0a3069;
+}
+
+.markdown-body .pl-v,
+.markdown-body .pl-smw {
+  color: #953800;
+}
+
+.markdown-body .pl-bu {
+  color: #82071e;
+}
+
+.markdown-body .pl-ii {
+  color: #f6f8fa;
+  background-color: #82071e;
+}
+
+.markdown-body .pl-c2 {
+  color: #f6f8fa;
+  background-color: #cf222e;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  font-weight: bold;
+  color: #116329;
+}
+
+.markdown-body .pl-ml {
+  color: #3b2300;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  font-weight: bold;
+  color: #0550ae;
+}
+
+.markdown-body .pl-mi {
+  font-style: italic;
+  color: #24292f;
+}
+
+.markdown-body .pl-mb {
+  font-weight: bold;
+  color: #24292f;
+}
+
+.markdown-body .pl-md {
+  color: #82071e;
+  background-color: #FFEBE9;
+}
+
+.markdown-body .pl-mi1 {
+  color: #116329;
+  background-color: #dafbe1;
+}
+
+.markdown-body .pl-mc {
+  color: #953800;
+  background-color: #ffd8b5;
+}
+
+.markdown-body .pl-mi2 {
+  color: #eaeef2;
+  background-color: #0550ae;
+}
+
+.markdown-body .pl-mdr {
+  font-weight: bold;
+  color: #8250df;
+}
+
+.markdown-body .pl-ba {
+  color: #57606a;
+}
+
+.markdown-body .pl-sg {
+  color: #8c959f;
+}
+
+.markdown-body .pl-corl {
+  text-decoration: underline;
+  color: #0a3069;
+}
+
+.markdown-body [data-catalyst] {
+  display: block;
+}
+
+.markdown-body g-emoji {
+  font-family: "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1em;
+  font-style: normal !important;
+  font-weight: 400;
+  line-height: 1;
+  vertical-align: -0.075em;
+}
+
+.markdown-body g-emoji img {
+  width: 1em;
+  height: 1em;
+}
+
+.markdown-body::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .absent {
+  color: #cf222e;
+}
+
+.markdown-body .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body details {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body sup>a::before {
+  content: "[";
+}
+
+.markdown-body sup>a::after {
+  content: "]";
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #24292f;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 tt,
+.markdown-body h1 code,
+.markdown-body h2 tt,
+.markdown-body h2 code,
+.markdown-body h3 tt,
+.markdown-body h3 code,
+.markdown-body h4 tt,
+.markdown-body h4 code,
+.markdown-body h5 tt,
+.markdown-body h5 code,
+.markdown-body h6 tt,
+.markdown-body h6 code {
+  padding: 0 .2em;
+  font-size: inherit;
+}
+
+.markdown-body ul.no-list,
+.markdown-body ol.no-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.markdown-body ol[type="1"] {
+  list-style-type: decimal;
+}
+
+.markdown-body ol[type=a] {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body ol[type=i] {
+  list-style-type: lower-roman;
+}
+
+.markdown-body div>ol:not([type]) {
+  list-style-type: decimal;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #d0d7de;
+}
+
+.markdown-body table tr {
+  background-color: #ffffff;
+  border-top: 1px solid hsla(210,18%,87%,1);
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body table img {
+  background-color: transparent;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body .emoji {
+  max-width: none;
+  vertical-align: text-top;
+  background-color: transparent;
+}
+
+.markdown-body span.frame {
+  display: block;
+  overflow: hidden;
+}
+
+.markdown-body span.frame>span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid #d0d7de;
+}
+
+.markdown-body span.frame span img {
+  display: block;
+  float: left;
+}
+
+.markdown-body span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: #24292f;
+}
+
+.markdown-body span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.markdown-body span.align-center>span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.markdown-body span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.markdown-body span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.markdown-body span.align-right>span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+.markdown-body span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+
+.markdown-body span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+
+.markdown-body span.float-left span {
+  margin: 13px 0 0;
+}
+
+.markdown-body span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+
+.markdown-body span.float-right>span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+.markdown-body code,
+.markdown-body tt {
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(175,184,193,0.2);
+  border-radius: 6px;
+}
+
+.markdown-body code br,
+.markdown-body tt br {
+  display: none;
+}
+
+.markdown-body del code {
+  text-decoration: inherit;
+}
+
+.markdown-body pre code {
+  font-size: 100%;
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 6px;
+}
+
+.markdown-body pre code,
+.markdown-body pre tt {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body .csv-data td,
+.markdown-body .csv-data th {
+  padding: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.markdown-body .csv-data .blob-num {
+  padding: 10px 8px 9px;
+  text-align: right;
+  background: #ffffff;
+  border: 0;
+}
+
+.markdown-body .csv-data tr {
+  border-top: 0;
+}
+
+.markdown-body .csv-data th {
+  font-weight: 600;
+  background: #f6f8fa;
+  border-top: 0;
+}
+
+.markdown-body .footnotes {
+  font-size: 12px;
+  color: #57606a;
+  border-top: 1px solid #d0d7de;
+}
+
+.markdown-body .footnotes ol {
+  padding-left: 16px;
+}
+
+.markdown-body .footnotes li {
+  position: relative;
+}
+
+.markdown-body .footnotes li:target::before {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -24px;
+  pointer-events: none;
+  content: "";
+  border: 2px solid #0969da;
+  border-radius: 6px;
+}
+
+.markdown-body .footnotes li:target {
+  color: #24292f;
+}
+
+.markdown-body .footnotes .data-footnote-backref g-emoji {
+  font-family: monospace;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item label {
+  font-weight: 400;
+}
+
+.markdown-body .task-list-item.enabled label {
+  cursor: pointer;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item .handle {
+  display: none;
+}
+
+.markdown-body .task-list-item-checkbox {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .contains-task-list:dir(rtl) .task-list-item-checkbox {
+  margin: 0 -1.6em .25em .2em;
+}
+
+.markdown-body ::-webkit-calendar-picker-indicator {
+  filter: invert(50%);
+}
+/* recommended style from docs: https://github.com/sindresorhus/github-markdown-css */
+.markdown-body {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+@media (max-width: 767px) {
+    .markdown-body {
+        padding: 15px;
+    }
+}
+</style>
+<script src="chrome-extension://njgehaondchbmjmajphnhlojfnbfokng/js/contentScripts/dom.js"></script></head>
+<body class="markdown-body" cz-shortcut-listen="true">
+<!--
+
+h2 => Version
+h3 => HTML/Vue/React
+h4 => We won't use h4 because it has minor changes compared to h3
+h5 => Added, Fixed, Updated, Removed, Deprecated
+
+-->
+<h1>Changelog</h1>
+<p>All notable changes to this template will be documented in this file</p>
+<blockquote>
+<p>Note:</p>
+<ul>
+<li>Jetstream support is enabled for HTML + Laravel version only. It will not work with Vue + Laravel version.</li>
+</ul>
+</blockquote>
+<h2 id="v9-10-0-2023-11-09-">v9.10.0 (2023-11-09)</h2>
+<h3 id="html-html-laravel-asp-net-core-django">HTML, HTML + Laravel, ASP.NET Core &amp; Django</h3>
+<h4 id="added">Added</h4>
+<ul>
+<li>Language-Driven LTR and RTL Adaptation</li>
+<li>Input group page, speech-to-text functionality</li>
+</ul>
+<h4 id="updated">Updated</h4>
+<ul>
+<li>Updated Bootstrap to latest version(5.3.2)</li>
+<li>Updated SCSS &amp; Mixins as per Bootstrap 5.3.2</li>
+<li>Updated Documentation</li>
+</ul>
+<h4 id="fixed">Fixed</h4>
+<ul>
+<li>Bordered Layout components &amp; third party UI fixes</li>
+<li>Horizontal menu slide for fixed layout</li>
+<li>Carousel HTML Structure as per latest Bootstrap</li>
+<li>Minor improvements &amp; Bugfixes</li>
+</ul>
+<h4 id="removed">Removed</h4>
+<ul>
+<li>Removed Portuguese language support</li>
+</ul>
+<h3 id="html-laravel">HTML + Laravel</h3>
+<h4 id="added">Added</h4>
+<ul>
+<li>Starter kit LTR(English) &amp; RTL(Arabic) Localization</li>
+</ul>
+<h3 id="asp-net-core">ASP.NET Core</h3>
+<h4 id="added">Added</h4>
+<ul>
+<li>CRUD with SQLite Database</li>
+<li>Docker support</li>
+</ul>
+<h3 id="django">Django</h3>
+<h4 id="added">Added</h4>
+<ul>
+<li>Transaction (CRUD) Example</li>
+<li>Authentication (Login, Logout, Register, Reset Password, Forgot Password)</li>
+<li>User Permission and Authorization (User: Admin, Client)</li>
+<li>Built-in templates for django server errors</li>
+</ul>
+<h4 id="updated">Updated</h4>
+<ul>
+<li>Localization based on text-direction</li>
+<li>Localization with default language support</li>
+</ul>
+<h4 id="fixed">Fixed</h4>
+<ul>
+<li>.env file issue with Debug mode (True was considered as string)</li>
+</ul>
+<h2>9.9.1 (2023-11-08)</h2>
+<h3>Vue, Nuxt &amp; VueJS Laravel</h3>
+<h4>Fixed</h4>
+<ul>
+<li>Horizontal nav menu in smaller screen doesn't convert to vertical nav</li>
+</ul>
+<h2>9.9.0 (2023-10-17)</h2>
+<h3>Nuxt 3</h3>
+<h4>Added</h4>
+<ul>
+<li>Nuxt 3 Version (Initial Release)</li>
+</ul>
+<h3>Vue &amp; Vue Laravel</h3>
+<h4>Added</h4>
+<ul>
+<li>Migration guide in docs for major and technical changes (Highly recommended to read)</li>
+<li><code>unplugin-vue-router</code> for typed pages</li>
+<li>eCommerce App
+<ul>
+<li>Dashboard</li>
+<li>Products
+<ul>
+<li>Product List</li>
+<li>Add Product</li>
+<li>Category List</li>
+</ul>
+</li>
+<li>Order
+<ul>
+<li>Order List</li>
+<li>Order Details</li>
+</ul>
+</li>
+<li>Customer
+<ul>
+<li>All Customers</li>
+<li>Customer Details</li>
+</ul>
+</li>
+<li>Manage Reviews</li>
+<li>Referrals</li>
+<li>Settings</li>
+</ul>
+</li>
+<li>Academy
+<ul>
+<li>Dashboard</li>
+<li>My Courses</li>
+<li>Courses Details</li>
+</ul>
+</li>
+<li>Logistics
+<ul>
+<li>Dashboard</li>
+<li>Fleet (Added MapBox library)</li>
+</ul>
+</li>
+<li>Front Pages
+<ul>
+<li>Landing Page</li>
+<li>Pricing Page</li>
+<li>Payment Page</li>
+<li>Checkout Page</li>
+<li>Help Center Page</li>
+</ul>
+</li>
+<li>Swiper Extension</li>
+<li>TipTap Rich Editor</li>
+<li>More Dialog Examples</li>
+<li>Form Wizard</li>
+<li>Vite Vue DevTool Plugin</li>
+</ul>
+<h4>Updated</h4>
+<ul>
+<li>Plugins are now registered automatically like Nuxt and moved to <code>src/plugins</code> directory</li>
+<li>Styles are moved to <code>src/assets/styles</code> directory</li>
+<li>Directory structure updated</li>
+<li>SSR related improvements and fixes</li>
+<li>We now uses SVG based CSS icons instead of SVGs for icons</li>
+<li>Theme config now uses "pinia" store instead of composable
+<ul>
+<li><code>useThemeConfig</code> composable is replaced with <code>useConfigStore</code> store</li>
+</ul>
+</li>
+<li>Replaced <code>axios</code> with native <code>fetch</code> API</li>
+<li>Replaced <code>axios-mock-adapter</code> with <code>msw</code></li>
+<li>Cookie is used for persistence instead of LocalStorage</li>
+<li>Customiser UI (User-friendly design)</li>
+<li>Invoice List (New widgets)</li>
+<li>User List (New widgets)</li>
+<li>Libraries Updated to latest version</li>
+<li>Code now utilize auto imports similar to Nuxt</li>
+</ul>
+<h4>Removed</h4>
+<ul>
+<li><code>vite-plugin-pages</code> plugin (Replaced by <code>unplugin-vue-router</code>)</li>
+<li><code>axios</code> (Replace by native <code>fetch</code> API)</li>
+<li><code>axios-mock-adapter</code> (Replaced by <code>msw</code>)</li>
+</ul>
+<h2>v9.8.0 (2023-09-22)</h2>
+<h3>Django</h3>
+<h5>Added</h5>
+<ul>
+<li>Bootstrap Django Initial Release</li>
+</ul>
+<h3>HTML</h3>
+<h4>Fixed</h4>
+<ul>
+<li>Navbar UI in horizontal layout</li>
+<li>Minor improvements &amp; Bugfixes</li>
+</ul>
+<h3>ASP.NET Core</h3>
+<h4>Fixed</h4>
+<ul>
+<li>Navbar UI in horizontal layout, front pages &amp; starter kit</li>
+<li>Font family issue in front pages</li>
+<li>Minor improvements &amp; Bugfixes</li>
+</ul>
+<h3>HTML + Laravel</h3>
+<h4>Fixed</h4>
+<ul>
+<li>Navbar UI in horizontal layout, front pages &amp; starter kit</li>
+<li>Improved Jetstream as per latest version</li>
+<li>Minor improvements &amp; Bugfixes</li>
+</ul>
+<h4>Updated</h4>
+<ul>
+<li>Routes</li>
+<li>Updated Laravel 10 base Folders &amp; files</li>
+<li>Updated Jetstream version(v4.x)</li>
+<li>Updated Livewire version(v3.x)</li>
+</ul>
+<h2>v9.7.0 (2023-08-09)</h2>
+<h3>HTML</h3>
+<h4>Fixed</h4>
+<ul>
+<li>Minor improvements &amp; Bugfixes</li>
+<li>Bordered Layout UI minor fixes</li>
+</ul>
+<h4>Updated</h4>
+<ul>
+<li>Updated Documentation</li>
+</ul>
+<h3>HTML + Laravel</h3>
+<h4>Updated</h4>
+<ul>
+<li>Updated Laravel Verison 10.17</li>
+<li>Improved Jetstream</li>
+</ul>
+<h3>ASP.NET Core</h3>
+<h4>Updated</h4>
+<ul>
+<li>Updated to .NET 7</li>
+</ul>
+<h3>ASP.NET Core &amp; HTML+Laravel</h3>
+<h4>Added</h4>
+<ul>
+<li>eCommerce App
+<ul>
+<li>Products
+<ul>
+<li>Product List</li>
+<li>Add Product</li>
+<li>Category List</li>
+</ul>
+</li>
+<li>Order
+<ul>
+<li>Order List</li>
+<li>Order Details</li>
+</ul>
+</li>
+<li>Customer
+<ul>
+<li>All Customers</li>
+<li>Customer Details</li>
+</ul>
+</li>
+<li>Manage Reviews</li>
+<li>Referrals</li>
+<li>Settings</li>
+</ul>
+</li>
+<li>Academy
+<ul>
+<li>Overview</li>
+<li>My Courses</li>
+<li>Courses Details</li>
+</ul>
+</li>
+<li>Logistics
+<ul>
+<li>Overview</li>
+<li>Fleet (Added MapBox library)</li>
+</ul>
+</li>
+<li>Front Pages
+<ul>
+<li>Landing Page</li>
+<li>Pricing Page</li>
+<li>Payment Page</li>
+<li>Checkout Page</li>
+<li>Help Center Page</li>
+</ul>
+</li>
+<li>Added system mode with mode select option (dropdown)</li>
+<li>Added form inputs hover border-color</li>
+</ul>
+<h4>Updated</h4>
+<ul>
+<li>Template Customizer UI (User-friendly design) &amp; Functionality</li>
+<li>Improved Navbar UI</li>
+<li>Removed flag icons for translation, instead using font icons</li>
+<li>Timeline structure improvement</li>
+<li>Updated heading font-weight</li>
+<li>Third-Party Libs</li>
+<li>Updated Docs Customiser, Front-pages &amp; Map-box</li>
+</ul>
+<h4>Fixed</h4>
+<ul>
+<li>Chat long message sending issue without space</li>
+<li>Email app, remove all email lists will show a message</li>
+<li>Firefox issues</li>
+<li>Other minor bugfixes</li>
+</ul>
+<h3>VueJS</h3>
+<h4>Removed</h4>
+<ul>
+<li>vuexy-bootstrapvue-vue2(deprecated) folder</li>
+</ul>
+<h3>Vue + Laravel</h3>
+<h4>Removed</h4>
+<ul>
+<li>vuexy-bootstrapvue(deprecated) folder</li>
+</ul>
+<h3>React</h3>
+<h4>Removed</h4>
+<ul>
+<li>vite-bootstrap5(deprecated) folder</li>
+</ul>
+<h3>Sketch</h3>
+<h4>Removed</h4>
+<ul>
+<li>design-files/sketch(deprecated) folder</li>
+</ul>
+<h2>v9.6.1 (2023-07-14)</h2>
+<h3>Figma</h3>
+<h5>Added</h5>
+<ul>
+<li>eCommerce App
+<ul>
+<li>Products
+<ul>
+<li>Product List</li>
+<li>Add Product</li>
+<li>Category List</li>
+</ul>
+</li>
+<li>Order
+<ul>
+<li>Order List</li>
+<li>Order Details</li>
+</ul>
+</li>
+<li>Customer
+<ul>
+<li>All Customers</li>
+<li>Customer Details</li>
+</ul>
+</li>
+<li>Manage Reviews</li>
+<li>Referrals</li>
+<li>Settings</li>
+</ul>
+</li>
+<li>Academy
+<ul>
+<li>Overview</li>
+<li>My Courses</li>
+<li>Courses Details</li>
+</ul>
+</li>
+<li>Logistics
+<ul>
+<li>Overview</li>
+<li>Fleet (Added MapBox library)</li>
+</ul>
+</li>
+<li>Front Pages
+<ul>
+<li>Landing Page</li>
+<li>Pricing Page</li>
+<li>Payment Page</li>
+<li>Checkout Page</li>
+<li>Help Center Page</li>
+</ul>
+</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Newly updated figma component structure with a boolean property</li>
+<li>Customiser UI (User-friendly design)</li>
+<li>Updated documentation</li>
+</ul>
+<h2>v9.6.0 (2023-07-04)</h2>
+<h3>HTML</h3>
+<h5>Added</h5>
+<ul>
+<li>eCommerce App
+<ul>
+<li>Products
+<ul>
+<li>Product List</li>
+<li>Add Product</li>
+<li>Category List</li>
+</ul>
+</li>
+<li>Order
+<ul>
+<li>Order List</li>
+<li>Order Details</li>
+</ul>
+</li>
+<li>Customer
+<ul>
+<li>All Customers</li>
+<li>Customer Details</li>
+</ul>
+</li>
+<li>Manage Reviews</li>
+<li>Referrals</li>
+<li>Settings</li>
+</ul>
+</li>
+<li>Academy
+<ul>
+<li>Overview</li>
+<li>My Courses</li>
+<li>Courses Details</li>
+</ul>
+</li>
+<li>Logistics
+<ul>
+<li>Overview</li>
+<li>Fleet (Added MapBox library)</li>
+</ul>
+</li>
+<li>Front Pages
+<ul>
+<li>Landing Page</li>
+<li>Pricing Page</li>
+<li>Payment Page</li>
+<li>Checkout Page</li>
+<li>Help Center Page</li>
+</ul>
+</li>
+<li>Added system mode with mode select option (dropdown)</li>
+<li>Added form inputs hover border-color</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Customiser UI (User-friendly design)</li>
+<li>Invoice List (New widgets)</li>
+<li>User List (New widgets)</li>
+<li>Removed flag icons for translation, instead using font icons</li>
+<li>Timeline structure improvement</li>
+<li>Updated heading font-weight</li>
+<li>3rd Party Libs</li>
+<li>Updated Docs Customiser, Front-pages &amp; Map-box</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Chat long message sending issue without space</li>
+<li>Ideal timer button-group (nav) not responsive</li>
+<li>W3C for Kanban, Invoice, and a Few modals</li>
+<li>Email app, remove all email lists will show the message</li>
+<li>Firefox issues</li>
+<li>Other minor bug fixes</li>
+</ul>
+<h2>v9.5.0 (2023-05-02)</h2>
+<h3>Vue, Vue + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>Added "system" theme (Auto update theme based on your system ✨)</li>
+<li>Added Roles and Permissions app</li>
+<li>Pages
+<ul>
+<li>Multi-step register</li>
+</ul>
+</li>
+<li>Demo pages
+<ul>
+<li>DataTable</li>
+<li>Simple table</li>
+<li>Autocomplete</li>
+</ul>
+</li>
+<li>New components
+<ul>
+<li>DataTable</li>
+<li>Autocomplete</li>
+<li>Tour</li>
+<li>Custom input (Radio &amp; Checkbox)</li>
+<li>IconBtn (virtual component)</li>
+<li>AppStepper (Wizard)</li>
+<li>AppTextField</li>
+<li>AppSelect</li>
+<li>AppAutocomplete</li>
+<li>AppCombobox</li>
+</ul>
+</li>
+<li>Wizard Example
+<ul>
+<li>Checkout</li>
+<li>Property listing</li>
+<li>Create deal</li>
+</ul>
+</li>
+<li>Dialog examples
+<ul>
+<li>App dialog</li>
+<li>Roles and Permissions</li>
+</ul>
+</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Align form and components as per Vuexy design</li>
+<li>Updated all dependencies and devDependencies</li>
+<li>Improved Navbar Notification components</li>
+<li>Updated Simple tables with vuetify datables in all the pages and apps</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Fixed Horizontal Menu popup issue in RTL</li>
+<li>Fixed AppDateTimePicker open below dialog</li>
+</ul>
+<h3>Vue + Laravel</h3>
+<h5>Updated</h5>
+<ul>
+<li>Laravel 10 support</li>
+</ul>
+<h3>React</h3>
+<h5>Added</h5>
+<ul>
+<li>Added <code>tonal</code> variant for MUI's Button component</li>
+<li>Added default color for the Floating Action Button (FAB) component</li>
+<li>Added custom components:
+<ol>
+<li><code>CustomTextField</code> component for rendering custom TextFields and Select components</li>
+<li><code>CustomAutocomplete</code> component for rendering custom Autocomplete component</li>
+</ol>
+</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated docs</li>
+<li>Updated all the packages</li>
+<li>Updated colors in MUI's theme palette</li>
+<li>Disabled default ripple effect from the Menu component</li>
+<li>Disabled default <code>responsiveFontSizes</code> from the MUI's typography</li>
+<li>Aligned typography, shadows, form elements, components and layout according to the Figma design</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Fixed minor bugs in Email, Calendar, Invoice app</li>
+<li>Fixed position of buffering dots in the LinearProgress component</li>
+<li>Fixed <code>Name</code> column toggle in the Column example on the DataGrid page</li>
+</ul>
+<h5>Removed</h5>
+<ul>
+<li>Removed unnecessary vscode extensions</li>
+<li>Removed unnecessary data from the Pricing dialog</li>
+<li>Removed link to MUI's Progress from More components page as it is shown in the separate page</li>
+</ul>
+<h3>HTML &amp; .Net</h3>
+<h5>Fixed</h5>
+<ul>
+<li>Form input &amp; Dropzone fixes</li>
+<li>Minor bugfixes</li>
+</ul>
+<h3>Laravel</h3>
+<h5>Updated</h5>
+<ul>
+<li>Laravel 10</li>
+<li>Jetstream 3.1</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Minor bugfixes</li>
+</ul>
+<h2>v9.4.2 (2023-03-17)</h2>
+<h3>React</h3>
+<h5>Added</h5>
+<ul>
+<li>Added .gitattributes file</li>
+<li>Added Progress component page</li>
+<li>Added necessary props for the UserLayout component</li>
+<li>Added ability to access vertical or horizontal layout with menu without loging in</li>
+<li>Added articles on how to migrate from JWT Auth to NextAuth, NextAuth with CredentialsProvider and NextAuth with GoogleProvider &amp; PrismaAdapter</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated docs</li>
+<li>Updated palette/components colors</li>
+<li>Changed MUI Links to Next.js Links</li>
+<li>Changed method of implementing semi-dark skin</li>
+<li>Updated MUI's theme structure which is in the <code>src/@core</code> folder</li>
+<li>Updated <code>lang</code> attribute on the <code>&lt;html&gt;</code> tag when the language is changed</li>
+<li>Updated all the packages (Refer to the official docs for the migration of <code>@mui/x-data-grid</code> from <a href="https://mui.com/x/migration/migration-data-grid-v5/">here</a>)</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Fixed <code>react-hot-toast</code>'s z-index</li>
+<li>Fixed duplicate user issue in User List app</li>
+<li>Fixed Alert snackbar shadow in bordered skin</li>
+<li>Fixed two factor auth dialog for small screen</li>
+<li>Fixed structure for all screen sizes on User Profile page</li>
+<li>Fixed calendar resize issue when collapse navigation menu</li>
+<li>Fixed shadow between nav header and nav items in the Vertical navigation menu in RTL</li>
+</ul>
+<h5>Removed</h5>
+<ul>
+<li>Removed validation from the register page</li>
+</ul>
+<h2>v9.4.1 (2023-01-18)</h2>
+<h3>HTML, Laravel &amp; .Net Core</h3>
+<h5>Updated</h5>
+<ul>
+<li>Full Calendar version updated to latest</li>
+<li>Email app, select all functionality updated</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Full Calendar production issue</li>
+<li>Quill Editor direction plugin support</li>
+</ul>
+<h2>v9.4.0 (2023-01-10)</h2>
+<h3>React</h3>
+<h5>Added</h5>
+<ul>
+<li>Added Next.js version based on MUI (initial release)</li>
+</ul>
+<h5>Deprecated</h5>
+<ul>
+<li>Vite version is now deprecated but will be supported for 6 months.</li>
+</ul>
+<h3>Laravel</h3>
+<h5>Updated</h5>
+<ul>
+<li>Updated structure Re-written from the ground up</li>
+<li>Updated documentation</li>
+<li>Updated all the dependencies to their latest version</li>
+</ul>
+<h3>HTML &amp; .Net Core</h3>
+<h5>Updated</h5>
+<ul>
+<li>Updated Datatable Library</li>
+<li>Updated Full Calendar Library</li>
+</ul>
+<h5>Removed</h5>
+<ul>
+<li>Datatables libs files as loading from single file</li>
+<li>jszip libs JS file as including with datatables</li>
+<li>pdfmake libs JS file as including with datatables</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Datatable Excel export</li>
+<li>Datatable button UI as update</li>
+<li>Minor bugfixes</li>
+</ul>
+<h3>Angular</h3>
+<h5>Deprecated</h5>
+<ul>
+<li>Angular version is deprecated due to less community support for Bootstrap and their libraries.</li>
+</ul>
+<h2>v9.3.0 (2022-12-07)</h2>
+<h3>ASP.NET Core</h3>
+<h5>Added</h5>
+<ul>
+<li>Initial release with full-version &amp; starter-kit</li>
+<li>ASP.NET Core 6</li>
+<li>Razor Pages</li>
+</ul>
+<h3>VueJs + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>Added Vue 3 support</li>
+<li>Added Vuetify 3 support</li>
+<li>Added TypeScript version (Vue 3 only)</li>
+</ul>
+<h5>Deprecated</h5>
+<ul>
+<li>Vue2 version is now deprecated</li>
+</ul>
+<h3>VueJs</h3>
+<h5>Added</h5>
+<ul>
+<li>Added appbar global search</li>
+<li>Added user profile page</li>
+<li>Added progress component</li>
+</ul>
+<h5>Refactored</h5>
+<ul>
+<li>Used new alias <code>@images</code>  for images import</li>
+<li>Used new alias <code>@styles</code>  for style import</li>
+<li>Renamed <code>card-analytics</code>  to  <code>card-widgets</code></li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated Vuetify to <code>v3.0.3</code></li>
+</ul>
+<h3>HTML</h3>
+<h5>Updated</h5>
+<ul>
+<li>Updated Bootstrap <code>5.2.3</code></li>
+<li>Updated documentation</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Minor bugfixes &amp; improvements</li>
+</ul>
+<h3>React</h3>
+<h5>Removed</h5>
+<ul>
+<li>React Bootstrap 4 version is now removed</li>
+</ul>
+<h2>v9.2.0 (2022-11-29)</h2>
+<h3>HTML</h3>
+<h5>Updated</h5>
+<ul>
+<li>Updated structure Re-written from the ground up</li>
+<li>Updated documentation</li>
+<li>Updated all the dependencies to their latest version</li>
+</ul>
+<h3>Figma</h3>
+<h5>Updated</h5>
+<ul>
+<li>Atomic design structure</li>
+<li>Drag &amp; Drop dashboard builder</li>
+<li>One-click light &amp; dark view</li>
+<li>Design &amp; Dev consistency</li>
+</ul>
+<h3>Sketch</h3>
+<h5>Deprecated</h5>
+<ul>
+<li>Deprecated sketch design, it will be removed from future updates.</li>
+</ul>
+<h2>v9.1.0 (2022-11-25)</h2>
+<h3>React</h3>
+<h5>Updated</h5>
+<ul>
+<li>Updated react package from CRA to Vite</li>
+<li>Updated all the dependencies to its latest version</li>
+</ul>
+<h2>v9.0.1 (2022-11-23)</h2>
+<h3>VueJS</h3>
+<h5>Updated</h5>
+<ul>
+<li>Lazy loaded default layout navigation menus for speed optimization</li>
+<li>Texts is now more readable</li>
+<li>Shadows enhanced</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Update logo color according to theme’s primary color</li>
+<li>Vertical nav wasn’t using theme’s primary color if it’s semi-dark</li>
+</ul>
+<h2>v9.0.0 (2022-11-16)</h2>
+<h3>VueJS</h3>
+<h5>Added</h5>
+<ul>
+<li>Vue 3 version added</li>
+<li>Vuetify 3 support added</li>
+<li>TypeScript version added(Vue 3 only)</li>
+</ul>
+<h5>Deprecated</h5>
+<ul>
+<li>vuexy-bootstrapvue-vue2 version deprecated and will be remove after 6 months of support</li>
+</ul>
+<h2>v8.2.2 (2022-09-09)</h2>
+<h3>HTML + Bootstrap 5</h3>
+<h5>Added</h5>
+<ul>
+<li>Added sass (dart sass)</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated gulp-sass</li>
+<li>Updated package.json</li>
+<li>Updated gulp tasks</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Fixed scss files as required for latest sass</li>
+</ul>
+<h2>v8.2.1 (2022-07-25)</h2>
+<h3>Angular</h3>
+<h5>Updated</h5>
+<ul>
+<li>Updated to Angular 14+</li>
+<li>Updated Dependencies</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Fixed division error due to DartSass2</li>
+<li>Other minor bug fixes</li>
+</ul>
+<h2>v8.2.0 (2022-05-26)</h2>
+<h3>React</h3>
+<h5>Added</h5>
+<ul>
+<li>Added Kanban App</li>
+<li>Added new articles in documentation</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated React to V18</li>
+<li>Updated Documentation</li>
+<li>Updated Dependencies to latest version</li>
+<li>Updated Router Structure to fix lifecycle side effects</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Fixed ACL sub to sub group not visible bug</li>
+<li>Fixed z-index bug in react-select</li>
+</ul>
+<h5>Removed</h5>
+<ul>
+<li>Router Transition</li>
+</ul>
+<h2>v8.1.0 (2022-03-25)</h2>
+<h3>React</h3>
+<h5>Added</h5>
+<ul>
+<li>Added React router 6 support</li>
+<li>Added React Hot Toast</li>
+<li>Added Register With Multi-steps Page</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated Core structure to accommodate react router 6 update</li>
+<li>Updated router, app and index files</li>
+<li>Updated Horizontal Menu to use Popper for better control</li>
+</ul>
+<h5>Removed</h5>
+<ul>
+<li>Removed React Router 5</li>
+<li>Removed Toastr</li>
+</ul>
+<h3>HTML + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>Browsersync Support</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated Laravel Framework to v9.0</li>
+<li>Updated Installation Process</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Fixed autoload compatibility issue in Helper.php</li>
+<li>Fixed Apexchart's Card overlap issue</li>
+<li>Fixed File Input validation issue in Dark Mode</li>
+</ul>
+<h3>Vue + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>Browsersync Support</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated Laravel Framework to v9.0</li>
+</ul>
+<h2>v8.0.0 (2021-12-01)</h2>
+<h3>React</h3>
+<h5>Added</h5>
+<ul>
+<li>Roles &amp; Permission app</li>
+<li>Account Settings</li>
+<li>Useful modal examples Added
+<ul>
+<li>Share project</li>
+<li>Add/Edit New Card</li>
+<li>Pricing</li>
+<li>Refer &amp; Earn</li>
+<li>Add New Address</li>
+<li>Create App</li>
+<li>Two factor authentication</li>
+<li>Edit User</li>
+</ul>
+</li>
+<li>Create Account - Register - Multisteps modal</li>
+<li>Two steps Authentication pages</li>
+<li>API key page</li>
+<li>Licenses Page</li>
+<li>Verify Email Pages</li>
+<li>Offcanvas Component Page</li>
+<li>i18next for translation</li>
+<li>redux-toolkit for store</li>
+<li>react-dropzone for file upload</li>
+<li>RC Input Number for number input</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated Bootstrap to V5.1.0</li>
+<li>Updated Reactstrap to V9.0.1</li>
+<li>Updated Third-party plugins to Stable versions</li>
+<li>Updated eslint</li>
+<li>Updated Account Settings Page</li>
+<li>Updated Users App</li>
+</ul>
+<h5>Removed</h5>
+<ul>
+<li>Removed Carousel</li>
+<li>Removed Leaflet Maps</li>
+<li>Removed Reactstrap Validation</li>
+<li>Removed react-intl</li>
+<li>Removed redux</li>
+<li>Removed uppy</li>
+<li>Removed custom number input</li>
+</ul>
+<h3>Angular</h3>
+<h5>Updated</h5>
+<ul>
+<li>Update Angular version 13 🎉</li>
+<li>Update NgBootstrap 11.0.0-rc.0</li>
+<li>Update Bootstrap 4.6.1</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Form repeater container layout</li>
+<li>Set NgSelect close icon on right side</li>
+</ul>
+<h2>v7.4.1 (2021-11-03)</h2>
+<h3>React</h3>
+<h5>Added</h5>
+<ul>
+<li>Added Craco to override webpack config, RTL compatibility &amp; Alias support</li>
+</ul>
+<h5>Removed</h5>
+<ul>
+<li>React App Rewired &amp; It's dependencies due to incompatibility with Node 16.x version</li>
+</ul>
+<h2>v7.4.0 (2021-09-14)</h2>
+<h3>HTML Bootstrap 5 + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>Jetstream Authentication Support - <a href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/documentation/documentation-laravel-jetstream.html">Installation Docs</a></li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Renamed sass folder to scss</li>
+<li>Updated Navbar for Jetstream Compatibility</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Selector renaming issue solved in dark theme(RTL).</li>
+</ul>
+<h5>Removed</h5>
+<p>Removed Default Auth (Laravel UI)</p>
+<h3>Vue + Laravel</h3>
+<h5>Updated</h5>
+<ul>
+<li>Updated Folder Structure <a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/documentation/guide/laravel-integration/folder-structure.html">Doc</a></li>
+</ul>
+<h2>v7.3.0 (2021-08-26)</h2>
+<h3>HTML + Bootstrap 5 &amp; HTML Bootstrap 5 + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>Roles &amp; Permission app</li>
+<li>User view pages - User app</li>
+<li>Account Settings</li>
+<li>Custom Options with radios &amp; checkboxes</li>
+<li>Useful modal examples Added
+<ul>
+<li>Share project</li>
+<li>Add/Edit New Card</li>
+<li>Pricing</li>
+<li>Refer &amp; Earn</li>
+<li>Add New Address</li>
+<li>Create App</li>
+<li>Two factor authentication</li>
+<li>Edit User</li>
+</ul>
+</li>
+<li>Create Account - Register - Multisteps modal</li>
+<li>Verify email pages</li>
+<li>Two steps Authentication pages</li>
+<li>API key page</li>
+<li>Licenses Page</li>
+<li>.btn-pinned class added to pin / fix element</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated to Bootstrap 5.1.0</li>
+<li>User list page - User app</li>
+<li>DataTables responsive library files updated with template js</li>
+<li>Updated Documentation</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Horizontal responsive console error fixed</li>
+<li>Auth page ui fixed</li>
+<li>Auth page responsive issue fixed</li>
+<li>Bootstrap validation fixed for Datepicker</li>
+</ul>
+<h5>Removed</h5>
+<ul>
+<li>User Edit page removed</li>
+<li>Bootstrap Tables - Table hover animation example removed</li>
+</ul>
+<h3>Email Templates</h3>
+<h5>Fixed</h5>
+<ul>
+<li>Background color issue fixed for Gmail &amp; similar mail clients</li>
+<li>Other minor bugfixes</li>
+</ul>
+<h3>Design Files</h3>
+<h5>Added</h5>
+<ul>
+<li>Roles &amp; Permission App</li>
+<li>User view pages - User App</li>
+<li>Account Settings</li>
+<li>Custom Options</li>
+<li>Useful modal examples Added
+<ul>
+<li>Share project</li>
+<li>Add/Edit New Card</li>
+<li>Pricing</li>
+<li>Refer &amp; Earn</li>
+<li>Add New Address</li>
+<li>Create App</li>
+<li>Two factor authentication</li>
+<li>Edit User</li>
+</ul>
+</li>
+<li>Create Account - Register - Multisteps modal</li>
+<li>Verify email pages</li>
+<li>Two steps Authentication pages</li>
+<li>API key page</li>
+</ul>
+<h2>v7.2.0 (2021-07-27)</h2>
+<h3>HTML + Bootstrap 5</h3>
+<h5>Fixed</h5>
+<ul>
+<li>Invoice print style fixed</li>
+<li>Horizontal menu dropdown position issue fixed</li>
+</ul>
+<h3>HTML + Bootstrap 4</h3>
+<h5>Updated</h5>
+<ul>
+<li>Custom file input validation UI updated</li>
+<li>Updated shepherd JS vendor files to solve tour issue</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Navbar theme toggler button issue solved</li>
+<li>Invoice-list's table UI fixed</li>
+</ul>
+<h3>HTML + Bootstrap 4 &amp; 5</h3>
+<h5>Removed</h5>
+<ul>
+<li>Disabled number input border-color removed</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>E-commerce Shop overlay sidebar issue solved</li>
+</ul>
+<h3>HTML Bootstrap 5 + Laravel</h3>
+<ul>
+<li>Initial releases</li>
+</ul>
+<h3>HTML Bootstrap 4 + Laravel</h3>
+<h5>Updated</h5>
+<ul>
+<li>Laravel Framework Updated to v8.40</li>
+<li>Laravel Mix Updated to 6.0.6</li>
+<li>Box layout is now the default layout.</li>
+<li>Custom file input validation UI updated</li>
+<li>Updated shepherd JS vendor files to solve tour issue</li>
+<li>RTL css moved into separate folder</li>
+<li>Updated multiple packages to latest version</li>
+<li>Updated documentation
+<ul>
+<li>Laravel Installation</li>
+<li>Added "How to use a custom font?" FAQ</li>
+</ul>
+</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Login Remember me token issue solved.</li>
+<li>Navbar theme toggler button issue solved</li>
+<li>Invoice-list's table UI fixed</li>
+<li>E-commerce Shop overlay sidebar issue solved</li>
+<li>Small Screen sidebar visible on page load issue solved.</li>
+</ul>
+<h2>v7.1.2 (2021-07-14)</h2>
+<h3>HTML + Bootstrap 5</h3>
+<h5>Fixed</h5>
+<ul>
+<li>Offcanvas variable issue fix</li>
+<li>Navbar Dropdown UI in mobile updated</li>
+<li>toastr slide-up fixed</li>
+<li>Authentication &amp; Misc pages UI for small screen updated</li>
+</ul>
+<h3>HTML + Bootstrap 4</h3>
+<h5>Fixed</h5>
+<ul>
+<li>Tour issue fixed</li>
+<li>toastr slide-up fixed</li>
+<li>Authentication &amp; Misc pages UI for small screen updated</li>
+<li>Dark page Validation UI Fixed</li>
+<li>Dark layout - layout style switch issue fixed</li>
+</ul>
+<h2>v7.1.1 (2021-07-07)</h2>
+<h3>Angular</h3>
+<h5>Updated</h5>
+<ul>
+<li>Updated unique BehaviorSubject</li>
+<li>Updated documentation for the following FAQs.
+<ul>
+<li><a href="https://pixinvent.com/demo/vuexy-angular-admin-dashboard-template/documentation/articles/how-to-make-api-call.html">How to make API call?</a></li>
+<li><a href="https://pixinvent.com/demo/vuexy-angular-admin-dashboard-template/documentation/articles/how-can-i-have-fullscreen-layout.html">How can I use fullscreen layout?</a></li>
+<li><a href="https://pixinvent.com/demo/vuexy-angular-admin-dashboard-template/documentation/faq/#i-have-integrated-toastr-component-in-my-project-starter-kit-why-is-display-bottom-left-behind-the-menu">I have integrated toastr component in my project/starter-kit, why is display bottom-left behind the menu?</a></li>
+</ul>
+</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Router Based Multiple API call issue</li>
+<li>Starter kit navbar console error</li>
+<li>Other minor bugs and fixes</li>
+</ul>
+<h2>v7.1.0 (2021-06-29)</h2>
+<h3>React</h3>
+<h5>Updated</h5>
+<ul>
+<li>Updated layouts for users to override easily i.e. Navbar, Footer, Menu etc..</li>
+<li>Updated Documentation</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Todo App Tag Update Bug Fix</li>
+</ul>
+<h5>Removed</h5>
+<ul>
+<li>Removed deprecated react version</li>
+</ul>
+<h2>v7.0.0 (2021-06-21)</h2>
+<h3>HTML + Bootstrap 5</h3>
+<ul>
+<li>Initial releases</li>
+</ul>
+<h3>HTML + Bootstrap 4</h3>
+<h5>Updated</h5>
+<ul>
+<li>Updated default Full layout to Container Layout. You can also change it to full-width if you want.</li>
+<li>Updated major third party libs to latest</li>
+<li>Updated Documentation</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Other minor bug fixes</li>
+<li>hamburger menu fix in layout without menu</li>
+</ul>
+<h3>Angular</h3>
+<h5>Added</h5>
+<ul>
+<li>Added Angular 12 support</li>
+<li>Now update default language using app-config with LocalStorage support.</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated role bases access support for menu, now you can add role based access for menu item, collapsible and section.</li>
+<li>Updated default layout to container instead of full-width, you can still change it to full-width if you want.</li>
+<li>Updated major third party libs to latest</li>
+<li>Updated bootstrap 4.6.0</li>
+<li>Updated starter-kit accordingly</li>
+<li>Updated Documentation:
+<ul>
+<li>Updated role based access for menu collapsible and section.</li>
+<li>FAQ: How to provide role based access to component/element?</li>
+</ul>
+</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Other minor bug fixes</li>
+</ul>
+<h2>v6.6.1 (2021-06-09)</h2>
+<h3>Vue, Vue + Laravel, Angular, Rect, HTML, HTML+Laravel</h3>
+<h5>Fixed</h5>
+<ul>
+<li>Full calendar chrome issue (<a href="https://github.com/fullcalendar/fullcalendar/issues/6358">https://github.com/fullcalendar/fullcalendar/issues/6358</a>)</li>
+</ul>
+<h2>v6.6.0 (2021-04-12)</h2>
+<h3>Angular</h3>
+<h5>Added</h5>
+<ul>
+<li>Routing animation with app config support</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Core Card with call back &amp; actions event support</li>
+<li>TouchSpin supported with minimum value now</li>
+<li>Todo: New todo will be added first on the todo list</li>
+<li>Invoice &amp; User list filters are functional now</li>
+<li>Updated documentation with new FAQs</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Collapsed menu layout gets expanded in few pages</li>
+<li>eCommerce Add to Cart item sometimes get remove from the checkout</li>
+<li>Fixed chat unseen message issue</li>
+<li>File upload with upload image support</li>
+<li>Other minor bugs</li>
+</ul>
+<h2>v6.5.0 (2021-03-09)</h2>
+<h3>Angular</h3>
+<h5>Added</h5>
+<ul>
+<li>Angular version Initial Release</li>
+</ul>
+<h2>v6.4.0 (2021-02-27)</h2>
+<h3>HTML, HTML + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>Added Laravel sanctum documentation</li>
+<li>Added Laravel Sail(Docker) documentation</li>
+<li>Added HTML Semi dark layout documentation</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated Bootstrap to 4.6.0</li>
+<li>Updated Laravel framework to latest</li>
+<li>Updated Laravel folder structure according to the latest one</li>
+<li>Updated Laravel passport documentation</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Fixed Toastr RTL UI bug</li>
+<li>Fixed Modal-xl style</li>
+<li>Fixed quill editor active tools color</li>
+<li>Fixed bordered layout issue on chat sidebar</li>
+<li>Fixed Mac &amp; Linux OS app scrolling issue</li>
+<li>Fixed Mac(Safari) console error</li>
+<li>Fixed Hamburger menu icon on Laravel starter kit</li>
+<li>Fixed Laravel footer script for dynamic year</li>
+<li>Fixed Laravel horizontal menu - hard coded class issue</li>
+<li>Fixed Laravel menu files documentation and support links target</li>
+<li>Fixed minor HTML bugs</li>
+</ul>
+<h2>v6.3.0 (2021-02-01)</h2>
+<h3>React</h3>
+<h5>Added</h5>
+<ul>
+<li>All-new design based on Ul/UX principles</li>
+<li>Based on React 17.x</li>
+<li>Based on Hooks &amp; Functional Components</li>
+<li>Built with Reactstrap framework</li>
+<li>Extendable Layouts</li>
+<li>New Bordered &amp; Dark layout</li>
+<li>New eCommerce Dashboard</li>
+<li>New widgets &amp; cards (with new gamification cards, analytics cards)</li>
+<li>Calendar App with Full Calendar</li>
+<li>Invoice App</li>
+<li>Authentication Pages (2 Types with SVG illustration)</li>
+<li>Tables &amp; Charts with real-life usage examples</li>
+<li>Pricing Page</li>
+<li>Blog Pages (List, Detail, Edit Pages)</li>
+<li>Added layout options
+<ul>
+<li>Boxed Layout</li>
+<li>Without Menu</li>
+</ul>
+</li>
+<li>Rating Component</li>
+<li>Leaflet Maps</li>
+<li>SweetAlert</li>
+<li>Toastify</li>
+<li>Slider</li>
+<li>General Error Page</li>
+<li>SVG and Font-icons support</li>
+<li>Well documented</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>JWT Auth</li>
+<li>Updated all libs to the latest version</li>
+<li>Improved components &amp; extensions</li>
+<li>Improved widgets &amp; cards (with new gamification cards, analytics cards)</li>
+<li>ACL (Updated to CASL Library)</li>
+<li>Autosuggest</li>
+<li>Updated Todo App</li>
+<li>Updated Users App</li>
+<li>Updated Authentication Pages (2 Types with SVG illustration)</li>
+<li>Updated Account Setting</li>
+<li>Updated FAQs</li>
+<li>Updated Knowledge Base</li>
+<li>Improved Tables with real-life usage examples</li>
+<li>Improved Forms with new components</li>
+<li>Improved Charts</li>
+<li>Updated Misc Pages</li>
+<li>Improved Documentation for better understanding and usage</li>
+</ul>
+<h5>Deprecated</h5>
+<ul>
+<li>Old version with Class based components (We are planning to remove this version from future updates)</li>
+</ul>
+<h5>Removed</h5>
+<ul>
+<li>AgGrid</li>
+<li>Firebase, Auth0</li>
+<li>Removed content pages and moved to documentation</li>
+<li>Tree Component</li>
+<li>Data list</li>
+<li>Google Maps</li>
+<li>Search Page</li>
+<li>Lock Screen Page</li>
+<li>500 Page</li>
+</ul>
+<h2>v6.2.0 (2021-01-11)</h2>
+<h3>Vue, Vue + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>Laravel Passport Support</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>FAQ page is filterable via search and category</li>
+<li>More Detailed Docs</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Fixed @core folder difference in Starter-kit and Full Package</li>
+<li>Starter-kit issues resolved</li>
+<li>Fixed Vertical Menu scroll issue in mobile</li>
+<li>IPhone specific issue resolved - Cart Dropdown Stretched Image &amp; Window zoom on input focus</li>
+<li>Router animation horizontal scrollbar issue</li>
+</ul>
+<h2>v6.1.0 (2021-01-01)</h2>
+<h3>Vue, Vue + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>All-new design based on Ul/UX principles</li>
+<li>Built with BootstrapVue framework</li>
+<li>Composition API support</li>
+<li>Extendable Layouts</li>
+<li>New Bordered &amp; Dark layout</li>
+<li>New eCommerce Dashboard</li>
+<li>Added support for Laravel 8</li>
+<li>New widgets &amp; cards (with new gamification cards, analytics cards)</li>
+<li>Calendar App</li>
+<li>Invoice App</li>
+<li>Authentication Pages (2 Types with SVG illustration)</li>
+<li>Tables &amp; Charts with real-life usage examples</li>
+<li>Pricing Page</li>
+<li>Blog Pages (List, Detail, Edit Pages)</li>
+<li>Added layout options
+<ul>
+<li>Box Layout</li>
+<li>Without Menu</li>
+</ul>
+</li>
+<li>Rating Component</li>
+<li>Leaflet Maps</li>
+<li>SweetAlert</li>
+<li>Toastification</li>
+<li>Slider</li>
+<li>General Error Page</li>
+<li>SVG and Font-icons support</li>
+<li>Well documented BootstrapVue version documentation</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Update Laravel 8</li>
+<li>JWT Auth</li>
+<li>Updated all libs to the latest version</li>
+<li>Improved components &amp; extensions</li>
+<li>Improved widgets &amp; cards (with new gamification cards, analytics cards)</li>
+<li>ACL (Updated to CASL Library)</li>
+<li>Autosuggest (Updated to vue-autosuggest Library)</li>
+<li>Updated Todo App</li>
+<li>Updated Users App</li>
+<li>Updated Authentication Pages (2 Types with SVG illustration)</li>
+<li>Updated Account Setting</li>
+<li>Updated FAQs</li>
+<li>Updated Knowledge Base</li>
+<li>Improved Tables with real-life usage examples</li>
+<li>Improved Forms with new components</li>
+<li>Improved Charts</li>
+<li>Updated Misc Pages</li>
+<li>Improved Documentation for better understanding and usage</li>
+<li>VueJS Vuesax version documentation <a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/documentation-vuesax-version/">URL</a> changed</li>
+</ul>
+<h5>Deprecated</h5>
+<ul>
+<li>Vuexy Vuesax framework support (We are planning to remove this version from future updates)</li>
+</ul>
+<h5>Removed</h5>
+<ul>
+<li>AgGrid</li>
+<li>Firebase, Auth0 &amp; Algolia</li>
+<li>Removed content pages and moved to documentation</li>
+<li>Tree Component</li>
+<li>Data list</li>
+<li>Google Maps</li>
+<li>Search Page</li>
+<li>Lock Screen Page</li>
+<li>500 Page</li>
+</ul>
+<h3>HTML, HTML + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>Added semi-dark layout</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated minor UI</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Menu hover icons issue</li>
+<li>Fixed select border and file upload border height</li>
+</ul>
+<h2>v6.0.0 (2020-11-28)</h2>
+<h3>HTML, HTML + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>All-new design based on Ul/UX principles</li>
+<li>New Bordered &amp; Dark layout</li>
+<li>New eCommerce Dashboard</li>
+<li>Invoice App</li>
+<li>Kanban App (Only in HTML &amp; HTML + Laravel)</li>
+<li>File Manager App (Only in HTML &amp; HTML + Laravel)</li>
+<li>Pricing Page</li>
+<li>Blog Pages (List, Detail, Edit Pages)</li>
+<li>Added layout options
+<ul>
+<li>Compact menu</li>
+<li>Box Layout</li>
+<li>Without Menu</li>
+<li>Empty Layout</li>
+<li>Blank Layout</li>
+</ul>
+</li>
+<li>Tree Component</li>
+<li>Rating Component</li>
+<li>Leaflet Maps</li>
+<li>SVG and Font-icons support</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated Bootstrap to v4.5.3</li>
+<li>Update Laravel 8</li>
+<li>Updated Laravel UI, Passport to latest versions</li>
+<li>Updated all libs to the latest version</li>
+<li>Improved components &amp; extensions</li>
+<li>Improved widgets &amp; cards (with new gamification cards, analytics cards)</li>
+<li>Updated Calendar App</li>
+<li>Updated Todo App</li>
+<li>Updated Users App</li>
+<li>Updated Authentication Pages (2 Types with SVG illustration)</li>
+<li>Updated Account Setting</li>
+<li>Updated FAQs</li>
+<li>Updated Knowledge Base</li>
+<li>Improved Tables with real-life usage examples</li>
+<li>Improved Forms with new components</li>
+<li>Improved Charts</li>
+<li>Updated Misc Pages</li>
+<li>Improved Documentation for better understanding and usage</li>
+</ul>
+<h5>Deprecated</h5>
+<ul>
+<li>AgGrid (Will be removed in future updates)</li>
+</ul>
+<h5>Removed</h5>
+<ul>
+<li>Removed content pages and moved to documentation</li>
+<li>Data list</li>
+<li>Chips component</li>
+<li>Echarts</li>
+<li>Google Maps</li>
+</ul>
+<h3>Design Files</h3>
+<h5>Added</h5>
+<ul>
+<li>Added Sketch &amp; Figma full design files with the atomic design system.
+<ul>
+<li>Dark &amp; Light design system</li>
+<li>Responsive support</li>
+<li>2 Dashboard &amp; 6 Layouts</li>
+<li>9 Apps &amp; 30+ Pages</li>
+<li>All UI &amp; Form Elements, Widgets, Charts</li>
+</ul>
+</li>
+</ul>
+<h3>Email Templates</h3>
+<h5>Added</h5>
+<ul>
+<li>Added ready to use email templates
+<ul>
+<li>Welcome</li>
+<li>Verify Account</li>
+<li>Reset Password</li>
+<li>Deactivate Account</li>
+<li>Invoice</li>
+<li>Promotional</li>
+</ul>
+</li>
+</ul>
+<h2>v5.4.0 (2020-05-08)</h2>
+<h3>HTML, HTML + Laravel</h3>
+<h5>Fixed</h5>
+<ul>
+<li>Scroll to active on mobile</li>
+</ul>
+<h3>VueJS, VueJS + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>Breadcrumb i18n support</li>
+<li>Laravel 7 migration guide added to docs</li>
+<li>Main Layout now supports modifying Menu Items from any route component</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Firebase updated to latest</li>
+<li>Vuexy now uses Vuesax package forked repo</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>vue-select extension theme color updation</li>
+<li>Data list app freeze on browser back when sidebar is open</li>
+<li>ACL support to navGroup(hide group if all child are hidden)</li>
+</ul>
+<h3>React</h3>
+<h5>Fixed</h5>
+<ul>
+<li>Sweet Alert in dark layout</li>
+</ul>
+<h3>Design Files</h3>
+<h5>Removed</h5>
+<ul>
+<li>Removed complementary design files from the package</li>
+</ul>
+<h2>v5.3.0 (2020-04-04)</h2>
+<h3>VueJS + Laravel, HTML + Laravel</h3>
+<h5>Updated</h5>
+<ul>
+<li>Updated laravel 7 to all full version and starter-kit</li>
+</ul>
+<h3>React</h3>
+<h5>Fixed</h5>
+<ul>
+<li>Firebase issue during npm install</li>
+</ul>
+<h2>v5.2.0 (2020-02-18)</h2>
+<h3>React</h3>
+<h5>Aaded</h5>
+<ul>
+<li>Data List</li>
+<li>React DataTable Component</li>
+<li>Light Badges</li>
+<li>Drag and Drop Functionality in Bookmarks</li>
+<li>Import-Export Excel &amp; CSV Files</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Firebase Namespace Error</li>
+<li>Memory Leak Error</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Wizard Functionality</li>
+<li>React Big Calendar</li>
+</ul>
+<h2>v5.1.0 (2020-02-12)</h2>
+<h3>VueJS, VueJS + Laravel, HTML, HTML + Laravel</h3>
+<h5>Updated</h5>
+<ul>
+<li>Strict linting added to improve code quality</li>
+</ul>
+<h2>v5.0.0 (2020-02-06)</h2>
+<h3>React</h3>
+<h5>Added</h5>
+<ul>
+<li>React full version Initial Release</li>
+</ul>
+<h2>v4.2.0 (2020-01-06)</h2>
+<h3>VueJS, VueJS + Laravel, HTML, HTML + Laravel</h3>
+<h5>Fixed</h5>
+<ul>
+<li>Fixed menu navigation issue on iOS update</li>
+</ul>
+<h3>HTML, HTML + Laravel</h3>
+<h5>Updated</h5>
+<ul>
+<li>Updated HTML - Laravel version base structure and configuration options</li>
+</ul>
+<h2>v4.1.0 (2019-11-14)</h2>
+<h3>VueJS, VueJS + Laravel, HTML, HTML + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>RTL compatibility for all versions</li>
+<li>User App</li>
+<li>User List</li>
+<li>User Add / Edit</li>
+<li>User View</li>
+<li>Account Settings Page</li>
+<li>Product Detail Page</li>
+<li>Statistics Cards</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Laravel core structure</li>
+<li>Global Search UI include pages, files and contacts group filter</li>
+<li>DataList UI Updates</li>
+<li>Print Ready Invoice Page</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Reported bugs and minor design fix</li>
+</ul>
+<h3>HTML, HTML + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>Swiper Component</li>
+</ul>
+<h2>v4.0.0 (2019-10-03)</h2>
+<ul>
+<li>Vuesax is now Vuexy :)</li>
+</ul>
+<h3>VueJS + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>VueJS + Laravel full version Initial Release</li>
+</ul>
+<h3>HTML + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>HTML + Laravel full version Initial Release</li>
+</ul>
+<h3>VueJS</h3>
+<h5>Added</h5>
+<ul>
+<li>Horizontal Menu with light &amp; dark layout</li>
+<li>JWT Authentication</li>
+<li>API Ready</li>
+<li>Import-Export</li>
+<li>Full Laravel Version</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>UI updates</li>
+<li>Bug fixes</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>DataList now support CRUD</li>
+<li>Major structural changes, Please check migration guide (v3 - v4)</li>
+</ul>
+<h3>HTML</h3>
+<h5>Added</h5>
+<ul>
+<li>Horizontal Menu with light &amp; dark layout</li>
+<li>AG Grid</li>
+<li>Media Player</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated Vendors/Libs</li>
+<li>Updated to Gulp4</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Minor Bugs</li>
+</ul>
+<h2>v3.3.0 (2019-07-18)</h2>
+<h3>VueJS</h3>
+<h5>Added</h5>
+<ul>
+<li>SSR table</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>VxTooltip fix</li>
+<li>Sidebar active link fix</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Functional component for performance</li>
+<li>All Libraries updated to its latest</li>
+<li>UI improvements</li>
+</ul>
+<h5>Removed</h5>
+<ul>
+<li>Deprecated calendar removed</li>
+</ul>
+<h3>HTML</h3>
+<h5>Added</h5>
+<ul>
+<li>User Settings Page</li>
+<li>Full Calender with Timegrid and custom buttons</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Email application - Form Reset on Compose Click</li>
+<li>Accordion Component - clickable on accordion heading section</li>
+<li>Set default badge color</li>
+<li>Custom Radio design fixed</li>
+<li>Main Menu Sub-item Icon Fixed</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated Documentation</li>
+</ul>
+<h2>v3.2.0 (2019-06-13)</h2>
+<h3>HTML + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>HTML + Laravel starter-kit version Initial Release</li>
+</ul>
+<h3>VueJS</h3>
+<h5>Added</h5>
+<ul>
+<li>VueJS cards actions events</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>VueJS Table was not showing initial data using api</li>
+<li>Responsiveness issues</li>
+</ul>
+<h2>v3.1.0 (2019-06-04)</h2>
+<h3>VueJS</h3>
+<h5>Added</h5>
+<ul>
+<li>New Date Time picker</li>
+<li>New classes in tailwind v1.x</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>vue-select component's UI improved</li>
+<li>Search list UI for navbar type improved</li>
+<li>Authentication and comning-soon pages' UI improved for small devices</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Fixed navbar-type and footer-type selection in customizer</li>
+<li>Fixed vxAutoSuggest bug</li>
+<li>Fixed: Chat app update about/status</li>
+</ul>
+<h5>Removed</h5>
+<ul>
+<li>API table of component is removed from component demo pages</li>
+</ul>
+<h2>v3.0.0 (2019-05-27)</h2>
+<h3>HTML</h3>
+<h5>Added</h5>
+<ul>
+<li>HTML version Initial Release</li>
+</ul>
+<h3>VueJS</h3>
+<h5>Added</h5>
+<ul>
+<li>HTML added</li>
+<li>Swipe out menu</li>
+<li>agGrid table</li>
+<li>Form Input Group</li>
+<li>Button group</li>
+<li>New calendar added</li>
+<li>Auto-suggest</li>
+<li>Tree component</li>
+<li>Star ratings</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>All packages updated to latest</li>
+<li>Tailwind updated to latest v1.x</li>
+<li>Dark layout enhanced</li>
+<li>More customizable cards</li>
+<li>UI improved</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Firebase register bug fixed</li>
+<li>Vulnerabilities in npm packages</li>
+</ul>
+<h5>Removed</h5>
+<ul>
+<li>Old Calendar</li>
+</ul>
+<h2>v2.1.0 (2019-04-18)</h2>
+<h3>Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>Laravel Starter Kit version Initial Release</li>
+</ul>
+<h3>VueJS</h3>
+<h5>Fixed</h5>
+<ul>
+<li>Bookmark Autosuggest Component Bug</li>
+<li>E-Commerce Sidebar Filter Reset Bug</li>
+<li>Laravel Starter Kit</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Chats now start from bottom so one doesn't have to scroll all the way to the end of the chat</li>
+</ul>
+<h2>v2.0.0 (2019-04-09)</h2>
+<h3>VueJS + Laravel</h3>
+<h5>Added</h5>
+<ul>
+<li>Vuexy Laravel Starter Kit version Initial Release</li>
+</ul>
+<h3>VueJS</h3>
+<h5>Added</h5>
+<ul>
+<li>Auth 0 Integration</li>
+<li>Firebase authentication + Social Logins</li>
+<li>E-Commerce App with shop, wishlist, checkout pages</li>
+<li>Algolia search and filter demo integrated with E-Commerce app</li>
+<li>Data List with firestore integration using axios
+<ul>
+<li>List View</li>
+<li>Thumb List View</li>
+</ul>
+</li>
+<li>App Tour</li>
+<li>Drag &amp; Drop Bookmarks to re-arrange</li>
+<li>Carousel (Image Slider)</li>
+<li>Clipboard (Copy to clipboard)</li>
+<li>Context Menu</li>
+<li>Scroll to top</li>
+<li>Not authorised Page</li>
+<li>Access Control (ACL)</li>
+<li>i18n Page</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated VueJS to latest version</li>
+<li>Updated Vuexy component framework to latest version</li>
+<li>Upadated all the npm dependencies to its latest version</li>
+<li>Updated drag &amp; drop plugin</li>
+<li>Updated dark layout background color and text colors</li>
+<li>Code Toggler to work well with light &amp; dark both layouts</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Fixed fuzzy search</li>
+<li>Fixed email app bug</li>
+<li>Large message in chat</li>
+<li>z-index issues</li>
+</ul>
+<h2>v1.1.0 (2019-02-27)</h2>
+<h3>VueJS</h3>
+<h5>Added</h5>
+<ul>
+<li>Added Semi Dark Layout</li>
+<li>Added Starter Kit</li>
+<li>Added App Loader</li>
+<li>Added Sketch, Adobe XD &amp; Figma files</li>
+<li>Added 404 page for Unknown URLs</li>
+</ul>
+<h5>Updated</h5>
+<ul>
+<li>Updated Folder Structure</li>
+<li>Updated Store</li>
+<li>Updated Documentation</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Fixed Minor Bugs</li>
+</ul>
+<h2>v1.0.1 (2019-02-18)</h2>
+<h3>VueJS</h3>
+<h5>Updated</h5>
+<ul>
+<li>Customizer can be enabled / disabled from themeconfig</li>
+</ul>
+<h5>Fixed</h5>
+<ul>
+<li>Customizer can be enabled / disabled from themeconfig</li>
+<li>Fixed search list of navbar</li>
+<li>Fixed public path in vue config</li>
+<li>Fixed date alignment in chat app</li>
+<li>Fixed Sidebar page sidebar style</li>
+<li>Select component list font size increased</li>
+</ul>
+<h2>v1.0.0 (2019-02-16)</h2>
+<h3>VueJS</h3>
+<h5>Added</h5>
+<ul>
+<li>VueJS version Initial Release</li>
+</ul>
+
+
+</body></html>

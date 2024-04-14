@@ -1,0 +1,64 @@
+@{
+  @* using this variables to load front pages assets *@
+  bool isFront = ViewData["isFront"] != null && Convert.ToBoolean(ViewData["isFront"]);
+  ViewData["main"] = (isFront) ? "front-" : "";
+  ViewData["frontVar"] = (isFront) ? "Front" : "";
+  @* Compact/Fluid class *@
+  ViewData["contentType"] = (ViewData["container"] == "container-xxl") ? "layout-compact" : "layout-wide";
+}
+
+@await Html.PartialAsync("Layouts/Sections/_Variables")
+@inject IHttpContextAccessor httpContextAccessor
+
+<!DOCTYPE html>
+<html lang="en"
+  class='light-style @ViewData["navbarType"] @ViewData["menuFixed"] @ViewData["menuCollapsed"] @ViewData["contentType"] @ViewData["footerFixed"] @ViewData["customizerHidden"]'
+  dir="ltr" data-theme="theme-default" data-assets-path='@(httpContextAccessor.HttpContext.Request.PathBase + "/")'
+  data-template='@(isFront ? "front-page" : (Convert.ToBoolean(TempData.Peek("menuHorizontal").ToString()) ? "horizontal-menu-template" : "vertical-menu-template"))'>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+  <title>@ViewData["title"] | @TempData.Peek("appName") - Asp.Net Core Admin Template</title>
+  <meta name="description" content="" />
+
+  <!-- Canonical SEO -->
+  <link rel="canonical" href='@TempData.Peek("productPage")'>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="~/img/favicon/favicon.ico" />
+
+  <!-- Core Styles -->
+  @await Html.PartialAsync("Layouts/Sections/_Styles" + ViewData["frontVar"])
+
+
+  <!-- Vendor Styles -->
+  @RenderSection("VendorStyles", required: false)
+
+  <!-- Page Styles -->
+  @RenderSection("PageStyles", required: false)
+
+  <!-- Include Scripts for customizer, helper, analytics, config -->
+  @await Html.PartialAsync("Layouts/Sections/_ScriptsIncludes" + ViewData["frontVar"])
+</head>
+
+<body>
+  <!-- Layout Content -->
+  @RenderBody()
+  <!--/ Layout Content -->
+
+  <!-- Core Scripts -->
+  @await Html.PartialAsync("Layouts/Sections/_Scripts" + ViewData["frontVar"])
+
+  <!-- Vendor Scripts -->
+  @RenderSection("VendorScripts", required: false)
+
+  <script src='~/js/@ViewData["main"]main.dist.js'></script>
+
+  <!-- Page Scripts-->
+  @RenderSection("PageScripts", required: false)
+
+
+</body>
+
+</html>

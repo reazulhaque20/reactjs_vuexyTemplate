@@ -1,0 +1,44 @@
+@page
+@model AspnetCoreFull.Pages.FrontPages.CheckoutPageModel
+@{
+  Layout = "Layouts/_FrontLayout";
+  ViewData["Title"] = "Checkout Card - Front Pages";
+}
+@section VendorStyles {
+<link rel="stylesheet" href="~/vendor/libs/select2/select2.dist.css" />
+<link rel="stylesheet" href="~/vendor/libs/bs-stepper/bs-stepper.dist.css" />
+<link rel="stylesheet" href="~/vendor/libs/rateyo/rateyo.dist.css" />
+<link rel="stylesheet" href="~/vendor/libs/&#64;form-validation/umd/styles/index.min.css" />
+}
+@section VendorScripts {
+  <script src="~/vendor/libs/jquery/jquery.dist.js"></script>
+<script src="~/vendor/libs/select2/select2.dist.js"></script>
+<script src="~/vendor/libs/bs-stepper/bs-stepper.dist.js"></script>
+<script src="~/vendor/libs/rateyo/rateyo.dist.js"></script>
+<script src="~/vendor/libs/cleavejs/cleave.dist.js"></script>
+<script src="~/vendor/libs/cleavejs/cleave-phone.dist.js"></script>
+<script src="~/vendor/libs/&#64;form-validation/umd/bundle/popular.min.js"></script>
+<script src="~/vendor/libs/&#64;form-validation/umd/plugin-bootstrap5/index.min.js"></script>
+<script src="~/vendor/libs/&#64;form-validation/umd/plugin-auto-focus/index.min.js"></script>
+}
+@section PageStyles {
+<link rel="stylesheet" href="~/vendor/css/pages/wizard-ex-checkout.dist.css" />
+}
+@section PageScripts {
+<script src="~/js/modal-add-new-address.dist.js"></script>
+<script src="~/js/wizard-ex-checkout.dist.js"></script>
+}
+
+@* ************** Content ************** *@
+
+<section class="section-py bg-body first-section-pt">
+  <div class="container">
+
+@await Html.PartialAsync("../_Partials/WizardCheckout")
+<!--/ Checkout Wizard -->
+
+<!-- Add new address modal -->
+@await Html.PartialAsync("../_Partials/_Modals/ModalAddNewAddress")
+  </div>
+</section>
+<!-- Checkout Wizard -->

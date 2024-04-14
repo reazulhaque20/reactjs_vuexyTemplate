@@ -1,0 +1,63 @@
+{% extends layout_path %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %}Permission - Apps{% endblock %}
+
+{% block vendor_css %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'vendor/libs/datatables-bs5/datatables.bootstrap5.css' %}" />
+<link rel="stylesheet" href="{% static 'vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css' %}" />
+<link rel="stylesheet" href="{% static 'vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css' %}" />
+<link rel="stylesheet" href="{% static 'vendor/libs/@form-validation/umd/styles/index.min.css' %}" />
+{% endblock vendor_css %}
+
+{% block vendor_js %}
+{{ block.super }}
+<script src="{% static 'vendor/libs/datatables-bs5/datatables-bootstrap5.js' %}"></script>
+<script src="{% static 'vendor/libs/@form-validation/umd/bundle/popular.min.js' %}"></script>
+<script src="{% static 'vendor/libs/@form-validation/umd/plugin-bootstrap5/index.min.js' %}"></script>
+<script src="{% static 'vendor/libs/@form-validation/umd/plugin-auto-focus/index.min.js' %}"></script>
+{% endblock vendor_js %}
+
+{% block page_js %}
+{{ block.super }}
+<script src="{% static 'js/app-access-permission.js' %}"></script>
+<script src="{% static 'js/modal-add-permission.js' %}"></script>
+<script src="{% static 'js/modal-edit-permission.js' %}"></script>
+{% endblock page_js %}
+
+{% block content %}
+<h4 class="py-3 mb-2">
+  {% translate "Permissions" %} {% translate "List" %}
+</h4>
+
+<p class="mb-4">Each category (Basic, Professional, and Business) includes the four predefined roles shown below.</p>
+
+
+<!-- Permission Table -->
+<div class="card">
+  <div class="card-datatable table-responsive">
+    <table class="datatables-permissions table border-top">
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th>Name</th>
+          <th>Assigned To</th>
+          <th>Created Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</div>
+<!--/ Permission Table -->
+
+
+<!-- Modal -->
+{% include "partials/_modals/modal_add_permission.html" %}
+{% include "partials/_modals/modal_edit_permission.html" %}
+<!-- /Modal -->
+{% endblock %}
